@@ -8,3 +8,5 @@
 - Started GitHub activity discovery for candidate project entries.
 - Added `CNAME` for `radar.anouar.ca`.
 - Added `.nojekyll` and a minimal static dashboard page.
+- Simplified schema to lifecycle status, last touched date, one-line summary, tags, and optional public links.
+- Seeded the first approved public project list from user classification.
