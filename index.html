@@ -13,21 +13,23 @@
     h1 { margin:0; font-size: clamp(34px, 5vw, 64px); letter-spacing:-0.06em; line-height:0.9; }
     .meta { color:var(--muted); text-align:right; font-size:14px; }
     .controls { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:22px; }
-    button { border:1px solid var(--line); background:var(--card); color:var(--text); padding:8px 11px; border-radius:999px; cursor:pointer; }
+    button { border:1px solid var(--line); background:var(--card); color:var(--text); padding:8px 11px; border-radius:999px; cursor:pointer; text-transform:capitalize; }
     button.active { border-color:var(--accent); color:var(--accent); }
     .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:14px; }
-    .card { border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015)); border-radius:18px; padding:18px; min-height:210px; }
+    .card { border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015)); border-radius:18px; padding:18px; min-height:180px; }
     .top { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; }
     h2 { margin:0; font-size:22px; letter-spacing:-0.03em; }
-    .badge { border:1px solid var(--line); border-radius:999px; padding:4px 8px; color:var(--muted); font-size:12px; white-space:nowrap; }
+    .badge { border:1px solid var(--line); border-radius:999px; padding:4px 8px; color:var(--muted); font-size:12px; white-space:nowrap; text-transform:capitalize; }
     p { color:var(--muted); line-height:1.45; }
     dl { margin:16px 0 0; display:grid; gap:10px; }
     dt { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
     dd { margin:2px 0 0; }
     a { color:var(--accent); text-decoration:none; }
-    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:14px; }
-    .tag { color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:3px 7px; font-size:12px; }
+    .tags, .links { display:flex; flex-wrap:wrap; gap:6px; margin-top:14px; }
+    .tag, .link { color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:3px 7px; font-size:12px; }
+    .link { color:var(--accent); }
     .empty { color:var(--muted); border:1px dashed var(--line); border-radius:18px; padding:24px; }
+    @media (max-width: 640px) { header { display:block; } .meta { text-align:left; margin-top:16px; } }
   </style>
 </head>
 <body>
@@ -35,7 +37,7 @@
     <header>
       <div>
         <h1>Project Radar</h1>
-        <p>Public-safe tracker for active, warm, parked, shipped, and dead projects.</p>
+        <p>Public-safe tracker for prototypes, maintained apps, paused work, and archived projects.</p>
       </div>
       <div class="meta" id="meta">Loading…</div>
     </header>
@@ -43,17 +45,24 @@
     <section class="grid" id="projects"></section>
   </main>
   <script>
-    const statuses = ["All", "Active", "Warm", "Parked", "Shipped", "Dead"];
-    let selected = "All";
+    let selected = "all";
     let state = null;
 
     function esc(value) {
       return String(value ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
     }
 
+    function statusLabel(id) {
+      return state?.status_options?.find(s => s.id === id)?.label || id;
+    }
+
     function renderControls() {
+      const statuses = [
+        { id: "all", label: "All" },
+        ...(state?.status_options || [])
+      ];
       const el = document.getElementById("controls");
-      el.innerHTML = statuses.map(s => `<button class="${s === selected ? "active" : ""}" data-status="${s}">${s}</button>`).join("");
+      el.innerHTML = statuses.map(s => `<button class="${s.id === selected ? "active" : ""}" data-status="${esc(s.id)}">${esc(s.label)}</button>`).join("");
       el.querySelectorAll("button").forEach(button => {
         button.addEventListener("click", () => { selected = button.dataset.status; render(); });
       });
@@ -61,8 +70,9 @@
 
     function render() {
       renderControls();
-      const projects = (state?.projects || []).filter(p => selected === "All" || p.status === selected);
-      document.getElementById("meta").innerHTML = `Updated ${esc(state?.updated_at || "unknown")}<br>${projects.length} visible / ${(state?.projects || []).length} total`;
+      const all = state?.projects || [];
+      const projects = all.filter(p => selected === "all" || p.status === selected);
+      document.getElementById("meta").innerHTML = `Updated ${esc(state?.updated_at || "unknown")}<br>${projects.length} visible / ${all.length} total`;
       const grid = document.getElementById("projects");
       if (!projects.length) {
         grid.innerHTML = `<div class="empty">No projects in this view.</div>`;
@@ -72,16 +82,15 @@
         <article class="card">
           <div class="top">
             <h2>${esc(p.name)}</h2>
-            <span class="badge">${esc(p.status)} · ${esc(p.priority)}</span>
+            <span class="badge">${esc(statusLabel(p.status))}</span>
           </div>
           <p>${esc(p.summary)}</p>
           <dl>
             <div><dt>Last touched</dt><dd>${esc(p.last_touched)}</dd></div>
-            <div><dt>Current thread</dt><dd>${esc(p.current_thread)}</dd></div>
-            <div><dt>Next action</dt><dd>${esc(p.next_action)}</dd></div>
-            ${p.blocker ? `<div><dt>Blocker</dt><dd>${esc(p.blocker)}</dd></div>` : ""}
+            ${p.notes ? `<div><dt>Notes</dt><dd>${esc(p.notes)}</dd></div>` : ""}
           </dl>
           <div class="tags">${(p.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
+          <div class="links">${(p.links || []).map(l => `<a class="link" href="${esc(l.url)}" rel="noopener noreferrer">${esc(l.label)}</a>`).join("")}</div>
         </article>
       `).join("");
     }
