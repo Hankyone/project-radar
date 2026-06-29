@@ -60,9 +60,8 @@
     "wifi",
     "writing"
   ],
-  "public_safety": {
-    "visibility": "public",
-    "rule": "Only publish project metadata: name, one-line description, status, last touched date, tags, and intentional public links."
+  "safety": {
+    "rule": "Only store project metadata: name, one-line description, status, last touched date, tags, and intentional links."
   },
   "projects": [
     {
@@ -129,7 +128,7 @@
       "name": "Maccy Pro Plus Ultra",
       "status": "maintenance",
       "last_touched": "2026-06-29",
-      "summary": "Clipboard manager app for my macOS workflow.",
+      "summary": "Maccy fork with macOS 27 compatibility fixes and improved scroll, hover, and image preview.",
       "tags": ["macos", "utility", "app"]
     },
     {
@@ -137,7 +136,7 @@
       "name": "Ghostty Pro Plus Ultra",
       "status": "maintenance",
       "last_touched": "2026-06-28",
-      "summary": "Terminal app for my macOS workflow.",
+      "summary": "Ghostty fork with a project-grouped sidebar, AI agent integration, and macOS quality-of-life improvements.",
       "tags": ["macos", "utility", "app"]
     },
     {
@@ -145,7 +144,7 @@
       "name": "NewGame",
       "status": "prototype",
       "last_touched": "2026-06-28",
-      "summary": "Self-contained web game experiment.",
+      "summary": "Suite of ten daily cipher puzzle games, each hiding a message a different way.",
       "tags": ["game", "consumer"]
     },
     {
@@ -153,7 +152,7 @@
       "name": "NearTalk",
       "status": "prototype",
       "last_touched": "2026-06-28",
-      "summary": "Nearby conversation capture and translation experiment.",
+      "summary": "Proximity-based voice chat iOS app using Multipeer Connectivity for nearby discovery.",
       "tags": ["ai", "app", "voice"]
     },
     {
@@ -161,7 +160,7 @@
       "name": "Capital Flow Tool",
       "status": "prototype",
       "last_touched": "2026-06-25",
-      "summary": "Capital flow visualization dashboard.",
+      "summary": "Self-updating local dashboard that maps where capital is leaning across asset buckets, with a directional flow-intensity model.",
       "tags": ["finance", "research", "visualization"]
     },
     {
@@ -201,7 +200,7 @@
       "name": "MacDown Pro Plus Ultra",
       "status": "maintenance",
       "last_touched": "2026-05-17",
-      "summary": "MacDown-based macOS app for my writing workflow.",
+      "summary": "MacDown fork with Apple Silicon helper path fixes, a branded crown icon, and a custom update channel.",
       "tags": ["macos", "utility", "app"]
     },
     {
@@ -209,7 +208,7 @@
       "name": "BLEUnlock Pro Plus Ultra",
       "status": "maintenance",
       "last_touched": "2026-04-30",
-      "summary": "BLE-based macOS unlock and wake utility.",
+      "summary": "Menu bar utility that locks and unlocks your Mac by BLE device proximity, with battery-aware improvements.",
       "tags": ["macos", "utility", "app"]
     },
     {
@@ -225,7 +224,7 @@
       "name": "RapidScope",
       "status": "maintenance",
       "last_touched": "2025-05-25",
-      "summary": "Security assessment scoping tool.",
+      "summary": "Client-facing pentest request portal for submitting engagement scope and scheduling.",
       "tags": ["app", "security", "product"]
     },
     {
@@ -233,7 +232,7 @@
       "name": "Wi-Fi Boost",
       "status": "maintenance",
       "last_touched": "unknown",
-      "summary": "Wi-Fi utility I actively use and maintain.",
+      "summary": "macOS menu bar app that reduces Wi-Fi latency by disabling AWDL.",
       "tags": ["utility", "wifi"]
     },
     {
@@ -241,7 +240,7 @@
       "name": "WindowVision",
       "status": "archived",
       "last_touched": "unknown",
-      "summary": "Room and window extraction prototype for window-covering workflows.",
+      "summary": "Video-based window extraction prototype for window-covering workflows, powered by Gemini.",
       "tags": ["app", "ai"]
     },
     {
@@ -249,7 +248,7 @@
       "name": "slop2prod",
       "status": "archived",
       "last_touched": "2025-07-28",
-      "summary": "AI-assisted code review and hardening experiment.",
+      "summary": "AI-powered security analysis platform that audits GitHub repos for vulnerabilities using Claude Code agents.",
       "tags": ["devtool", "ai", "security"]
     },
     {
@@ -257,7 +256,7 @@
       "name": "Waitless / NoHoldBot",
       "status": "archived",
       "last_touched": "unknown",
-      "summary": "Phone-hold and wait-time automation experiment.",
+      "summary": "Phone assistant that navigates IVR, waits on hold, and bridges you in when a human agent answers.",
       "tags": ["automation", "app", "utility"]
     },
     {
@@ -265,23 +264,15 @@
       "name": "ShadowAI Monitor",
       "status": "archived",
       "last_touched": "unknown",
-      "summary": "Shadow-AI monitoring concept.",
+      "summary": "Corporate DNS-log analyzer that detects and reports employee use of AI services.",
       "tags": ["security", "ai"]
-    },
-    {
-      "id": "quorum-backtester",
-      "name": "Quorum Backtester",
-      "status": "archived",
-      "last_touched": "unknown",
-      "summary": "Backtesting experiment for the Quorum finance idea.",
-      "tags": ["finance", "research"]
     },
     {
       "id": "prhub",
       "name": "PRHub",
       "status": "archived",
       "last_touched": "unknown",
-      "summary": "Pull-request and review hub experiment.",
+      "summary": "PR intelligence dashboard that turns campaign emails into a tracked view of reporters, coverage, and key dates.",
       "tags": ["devtool", "app"]
     },
     {
@@ -289,7 +280,7 @@
       "name": "OpenMicForm",
       "status": "archived",
       "last_touched": "unknown",
-      "summary": "Form-capture prototype.",
+      "summary": "Registration form for the CISO Open Mic event, organized by CyberPlayback.",
       "tags": ["app"]
     },
     {
@@ -297,7 +288,7 @@
       "name": "DroneTO-311",
       "status": "archived",
       "last_touched": "unknown",
-      "summary": "Hackathon project for a Toronto 311 drone/civic concept.",
+      "summary": "Live 311 ticket dispatch platform with drone reconnaissance simulation for Toronto.",
       "tags": ["app", "civic"]
     },
     {
@@ -305,7 +296,7 @@
       "name": "SimpleDocket",
       "status": "archived",
       "last_touched": "unknown",
-      "summary": "Docket-style app prototype.",
+      "summary": "AI-powered timekeeping tool that turns natural-language activity descriptions into formatted docket entries for billing.",
       "tags": ["app"]
     },
     {
@@ -321,8 +312,136 @@
       "name": "Realtime Voice Agent",
       "status": "archived",
       "last_touched": "unknown",
-      "summary": "Realtime audio agent experiment.",
+      "summary": "Realtime voice agent that conducts phone consultations for a blinds company.",
       "tags": ["voice", "ai"]
+    },
+    {
+      "id": "fce",
+      "name": "Fusion Compliance Engine",
+      "status": "building",
+      "last_touched": "2026-06-11",
+      "summary": "Policy-aware gatekeeper for sensor fusion, built for the DND/CAF IDEaS challenge.",
+      "tags": ["ai", "security", "research", "product"]
+    },
+    {
+      "id": "visiondj",
+      "name": "VisionDJ",
+      "status": "building",
+      "last_touched": "2026-06-11",
+      "summary": "Vision-driven generative music using YOLO11 tracking and Magenta RealTime 2, fully local.",
+      "tags": ["ai", "app", "hardware", "product"]
+    },
+    {
+      "id": "mech-interp-lab",
+      "name": "Mech-Interp-Lab",
+      "status": "prototype",
+      "last_touched": "2026-06-23",
+      "summary": "Mechanistic interpretability lab with backend and frontend.",
+      "tags": ["ai", "research"]
+    },
+    {
+      "id": "shadesec-skillcheck",
+      "name": "ShadeSec SkillCheck",
+      "status": "prototype",
+      "last_touched": "2026-06-23",
+      "summary": "Security tool for reviewing AI skills installed with AI agents and understanding the risk around them.",
+      "tags": ["security", "ai", "devtool"]
+    },
+    {
+      "id": "optimal-eats",
+      "name": "OptimalEats",
+      "status": "prototype",
+      "last_touched": "2026-06-01",
+      "summary": "App that optimizes the best food order around a price you set.",
+      "tags": ["app", "consumer", "finance"]
+    },
+    {
+      "id": "blurred-pro-plus-ultra",
+      "name": "Blurred Pro Plus Ultra",
+      "status": "maintenance",
+      "last_touched": "2026-04-03",
+      "summary": "macOS distraction-dimming utility, forked and improved for my workflow.",
+      "tags": ["macos", "utility", "app"]
+    },
+    {
+      "id": "emg-myoware",
+      "name": "EMG-MyoWare Experiments",
+      "status": "archived",
+      "last_touched": "2026-02-10",
+      "summary": "EMG BLE receiver and live-plotting experiments with MyoWare sensors.",
+      "tags": ["hardware", "research"]
+    },
+    {
+      "id": "whats-in-the-background",
+      "name": "WhatsInTheBackground",
+      "status": "maintenance",
+      "last_touched": "2026-01-20",
+      "summary": "Native macOS app showing processes listening on network ports, with kill capability.",
+      "tags": ["macos", "utility", "app"]
+    },
+    {
+      "id": "poly-leaders",
+      "name": "Polymarket Leaderboard Archiver",
+      "status": "maintenance",
+      "last_touched": "2026-01-17",
+      "summary": "Cloudflare Worker archiving Polymarket leaderboard snapshots with a browseable web UI.",
+      "tags": ["finance", "cloudflare", "app"]
+    },
+    {
+      "id": "cissp-app",
+      "name": "CISSP Practice App",
+      "status": "archived",
+      "last_touched": "2026-01-17",
+      "summary": "CISSP practice question generator using DeepSeek, with a SQLite-backed practice app.",
+      "tags": ["security", "app", "ai"]
+    },
+    {
+      "id": "quorum",
+      "name": "Quorum",
+      "status": "paused",
+      "last_touched": "2025-12-22",
+      "summary": "Polymarket copy-trader platform with a backtesting engine for follow-the-leader strategies.",
+      "tags": ["finance", "product", "app"]
+    },
+    {
+      "id": "ghost-operator",
+      "name": "GhostOperator",
+      "status": "paused",
+      "last_touched": "2025-12-13",
+      "summary": "AI agent that interfaces via JetKVM hardware so it can be plugged into any machine.",
+      "tags": ["ai", "hardware", "infrastructure"]
+    },
+    {
+      "id": "scraper-reverser",
+      "name": "ScraperReverser",
+      "status": "prototype",
+      "last_touched": "2025-11-26",
+      "summary": "Honeypot website for analyzing web scraper behavior, on Cloudflare Workers.",
+      "tags": ["security", "cloudflare", "research"]
+    },
+    {
+      "id": "fourier2chirp",
+      "name": "Fourier2Chirp",
+      "status": "archived",
+      "last_touched": "2025-12-31",
+      "summary": "Forked interactive Fourier transform tutorial extended to cover chirps.",
+      "tags": ["visualization", "research"]
+    },
+    {
+      "id": "window-agent",
+      "name": "WindowAgent",
+      "status": "archived",
+      "last_touched": "2025-08-13",
+      "summary": "Phone-call intake assistant with live transcript display and call status tracking.",
+      "tags": ["ai", "app"]
+    },
+    {
+      "id": "tap-and-cert",
+      "name": "TapAndCert",
+      "status": "archived",
+      "last_touched": "2025-06-08",
+      "summary": "CISSP exam study app with swipeable flashcard review.",
+      "tags": ["ios", "app", "security"]
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Project Radar
 
-Public-safe one-page project tracker.
+One-page project tracker.
 
 This repo is meant to be updated from a pinned ChatGPT thread. The page reads `projects.json` and renders project cards grouped by status, priority, and freshness.
 
@@ -16,7 +16,7 @@ This repo is meant to be updated from a pinned ChatGPT thread. The page reads `p
 
 This tracker is not a repo audit and does not inspect or expose repository contents.
 
-Each public project entry should be limited to:
+Each project entry should be limited to:
 
 - project name
 - one-line description
@@ -24,8 +24,8 @@ Each public project entry should be limited to:
 - priority
 - last touched date
 - next action
-- blocker, only when public-safe
-- public links, only when intentionally public
+- blocker, only when safe to share
+- links, only when intentionally shared
 
 Sensitive project work can still be represented by a sanitized project name and generic one-liner. Private repository contents, client material, pentest details, credentials, targets, and internal notes stay out of this repo.
 
@@ -35,10 +35,6 @@ Sensitive project work can still be represented by a sanitized project name and 
 2. The assistant updates `projects.json`.
 3. The assistant appends to `changelog.md`.
 4. `index.html` only changes when the tracker UI changes.
-
-## Public safety rule
-
-Do not publish secrets or operational details. Keep entries as public-safe project metadata only.
 
 ## GitHub Pages
 
