@@ -156,12 +156,19 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1.4rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.65rem;
       padding-bottom: 0.9rem;
       border-bottom: 1px solid var(--hairline-soft);
     }
 
-    .filter-btn {
+    .filter-tools {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 1rem;
+    }
+
+    .filter-btn,
+    .tiny-btn {
       font-family: var(--mono);
       font-size: 0.62rem;
       letter-spacing: 0.18em;
@@ -176,7 +183,14 @@
       transition: color 0.25s ease;
     }
 
-    .filter-btn::after {
+    .tiny-btn {
+      font-size: 0.52rem;
+      letter-spacing: 0.16em;
+      color: var(--ink-3);
+    }
+
+    .filter-btn::after,
+    .tiny-btn::after {
       content: '';
       position: absolute;
       left: 0;
@@ -188,9 +202,11 @@
     }
 
     .filter-btn:hover,
-    .filter-btn.active { color: var(--ink); }
+    .filter-btn.active,
+    .tiny-btn:hover { color: var(--ink); }
     .filter-btn:hover::after,
-    .filter-btn.active::after { background: var(--loden); }
+    .filter-btn.active::after,
+    .tiny-btn:hover::after { background: var(--loden); }
 
     .row {
       display: grid;
@@ -336,6 +352,7 @@
       .row { display: block; padding: 2.6rem 0 1.8rem; }
       .side { margin-bottom: 1.3rem; }
       .index-meta { display: none; }
+      .filter-tools { justify-content: flex-start; }
       footer { display: block; }
     }
   </style>
@@ -372,6 +389,9 @@
     </section>
 
     <nav class="filters" id="filters" aria-label="Project filters"></nav>
+    <div class="filter-tools">
+      <button class="tiny-btn" id="expand-all" type="button">Expand all</button>
+    </div>
 
     <main>
       <section class="row">
@@ -392,6 +412,7 @@
   <script>
     let state = null;
     let selected = 'all';
+    let allExpanded = false;
 
     function esc(value) {
       return String(value ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -404,6 +425,19 @@
     function dateLabel(value) {
       if (!value) return 'Unknown';
       return value;
+    }
+
+    function updateExpandButton() {
+      const button = document.getElementById('expand-all');
+      if (button) button.textContent = allExpanded ? 'Collapse all' : 'Expand all';
+    }
+
+    function setAllExpanded(expanded) {
+      allExpanded = expanded;
+      document.querySelectorAll('.index-trigger').forEach(trigger => {
+        trigger.setAttribute('aria-expanded', String(expanded));
+      });
+      updateExpandButton();
     }
 
     function renderFilters() {
@@ -430,11 +464,12 @@
       const list = document.getElementById('projects');
       if (!projects.length) {
         list.innerHTML = '<p class="empty">No projects in this view.</p>';
+        updateExpandButton();
         return;
       }
 
       list.innerHTML = projects.map((project, index) => {
-        const open = index === 0 ? 'true' : 'false';
+        const open = allExpanded || index === 0 ? 'true' : 'false';
         return `
           <article class="index-item">
             <button class="index-trigger" type="button" aria-expanded="${open}">
@@ -458,14 +493,22 @@
         trigger.addEventListener('click', () => {
           const expanded = trigger.getAttribute('aria-expanded') === 'true';
           trigger.setAttribute('aria-expanded', String(!expanded));
+          const triggers = [...list.querySelectorAll('.index-trigger')];
+          allExpanded = triggers.length > 0 && triggers.every(item => item.getAttribute('aria-expanded') === 'true');
+          updateExpandButton();
         });
       });
+      updateExpandButton();
     }
 
     function render() {
       renderFilters();
       renderProjects();
     }
+
+    document.getElementById('expand-all').addEventListener('click', () => {
+      setAllExpanded(!allExpanded);
+    });
 
     fetch('projects.json', { cache: 'no-store' })
       .then(response => response.json())
