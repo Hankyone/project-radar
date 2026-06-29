@@ -47,9 +47,13 @@
     "personal-site",
     "product",
     "research",
+    "robotics",
     "rss",
     "security",
     "utility",
+    "visualization",
+    "voice",
+    "wifi",
     "writing"
   ],
   "public_safety": {
@@ -77,6 +81,22 @@
       "tags": ["product", "grc", "security"]
     },
     {
+      "id": "canary-intelligence",
+      "name": "Canary Intelligence",
+      "status": "building",
+      "last_touched": "2026-06-29",
+      "summary": "Security intelligence tool using canary tokens to detect and attribute unexpected access paths.",
+      "tags": ["security", "research", "product"]
+    },
+    {
+      "id": "rx1stack",
+      "name": "RX1 Stack",
+      "status": "building",
+      "last_touched": "2026-06-29",
+      "summary": "Current robotics/control stack work around the RX1 hardware project.",
+      "tags": ["robotics", "hardware", "software"]
+    },
+    {
       "id": "deadsimplerss",
       "name": "deadsimpleRSS",
       "status": "maintenance",
@@ -91,6 +111,30 @@
       "last_touched": "2026-06-15",
       "summary": "YouTube recap app with users, public sharing, guest usage, and ongoing maintenance.",
       "tags": ["app", "ai", "product"]
+    },
+    {
+      "id": "rapidscope",
+      "name": "RapidScope",
+      "status": "maintenance",
+      "last_touched": "2026-05-20",
+      "summary": "ShadeSec scoping tool that still exists publicly and is being used.",
+      "tags": ["app", "security", "product"]
+    },
+    {
+      "id": "wifi-boost",
+      "name": "Wi-Fi Boost",
+      "status": "maintenance",
+      "last_touched": "2026-06-29",
+      "summary": "Personal utility tool that is actively used and maintained.",
+      "tags": ["utility", "wifi"]
+    },
+    {
+      "id": "anouardotca",
+      "name": "Anouar.ca",
+      "status": "maintenance",
+      "last_touched": "2026-06-17",
+      "summary": "Personal website, currently maintained rather than treated as a standalone product.",
+      "tags": ["personal-site", "cloudflare"]
     },
     {
       "id": "too-many-projects-chromeext",
@@ -109,12 +153,20 @@
       "tags": ["app", "ai", "product"]
     },
     {
-      "id": "anouardotca",
-      "name": "Anouar.ca",
-      "status": "maintenance",
-      "last_touched": "2026-06-17",
-      "summary": "Personal website, currently maintained rather than treated as a standalone product.",
-      "tags": ["personal-site", "cloudflare"]
+      "id": "voicebuddy",
+      "name": "VoiceBuddy",
+      "status": "prototype",
+      "last_touched": "2026-05-01",
+      "summary": "Voice experiment kept separate from other realtime voice agent work.",
+      "tags": ["voice", "ai", "app"]
+    },
+    {
+      "id": "realtimevoiceagent",
+      "name": "Realtime Voice Agent",
+      "status": "prototype",
+      "last_touched": "2026-06-29",
+      "summary": "Realtime voice agent experiment for live audio interaction workflows.",
+      "tags": ["voice", "ai", "prototype"]
     },
     {
       "id": "adobe-bug-bounty",
@@ -195,6 +247,78 @@
       "last_touched": "2026-04-30",
       "summary": "Personal fork/customization track for BLE-based unlock or display wake behavior.",
       "tags": ["macos", "fork", "utility"]
+    },
+    {
+      "id": "windowvision",
+      "name": "WindowVision",
+      "status": "archived",
+      "last_touched": "2026-06-29",
+      "summary": "Retired window-covering and room/window extraction prototype.",
+      "tags": ["app", "ai", "prototype"]
+    },
+    {
+      "id": "slop2prod",
+      "name": "slop2prod",
+      "status": "archived",
+      "last_touched": "2026-06-29",
+      "summary": "Retired code review and AI-code hardening product experiment.",
+      "tags": ["devtool", "ai", "security"]
+    },
+    {
+      "id": "waitless-noholdbot",
+      "name": "Waitless / NoHoldBot",
+      "status": "archived",
+      "last_touched": "2026-06-29",
+      "summary": "Retired wait-time or phone-hold automation project.",
+      "tags": ["automation", "app", "utility"]
+    },
+    {
+      "id": "shadowai-monitor",
+      "name": "ShadowAI Monitor",
+      "status": "archived",
+      "last_touched": "2026-04-05",
+      "summary": "Archived shadow-AI monitoring concept.",
+      "tags": ["security", "ai", "prototype"]
+    },
+    {
+      "id": "quorum-backtester",
+      "name": "Quorum Backtester",
+      "status": "archived",
+      "last_touched": "2026-06-29",
+      "summary": "Archived backtesting experiment connected to the Quorum idea.",
+      "tags": ["finance", "research", "prototype"]
+    },
+    {
+      "id": "prhub",
+      "name": "PRHub",
+      "status": "archived",
+      "last_touched": "2026-06-29",
+      "summary": "Archived pull-request or review hub experiment.",
+      "tags": ["devtool", "app", "prototype"]
+    },
+    {
+      "id": "openmicform",
+      "name": "OpenMicForm",
+      "status": "archived",
+      "last_touched": "2026-06-29",
+      "summary": "Archived form-capture prototype.",
+      "tags": ["app", "prototype"]
+    },
+    {
+      "id": "droneto311",
+      "name": "DroneTO-311",
+      "status": "archived",
+      "last_touched": "2026-06-29",
+      "summary": "Archived hackathon project.",
+      "tags": ["app", "prototype", "civic"]
+    },
+    {
+      "id": "simpledocket",
+      "name": "SimpleDocket",
+      "status": "archived",
+      "last_touched": "2026-06-29",
+      "summary": "Archived docket-style app prototype.",
+      "tags": ["app", "prototype"]
     }
   ]
 }
