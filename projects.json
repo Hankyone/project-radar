@@ -117,44 +117,12 @@
       "tags": ["app", "ai", "video", "product"]
     },
     {
-      "id": "rapidscope",
-      "name": "RapidScope",
-      "status": "maintenance",
-      "last_touched": "2026-05-20",
-      "summary": "Security assessment scoping tool.",
-      "tags": ["app", "security", "product"]
-    },
-    {
-      "id": "wifi-boost",
-      "name": "Wi-Fi Boost",
-      "status": "maintenance",
+      "id": "too-many-projects-chromeext",
+      "name": "Too Many Projects Chrome Extension",
+      "status": "prototype",
       "last_touched": "2026-06-29",
-      "summary": "Wi-Fi utility I actively use and maintain.",
-      "tags": ["utility", "wifi"]
-    },
-    {
-      "id": "anouardotca",
-      "name": "Anouar.ca",
-      "status": "maintenance",
-      "last_touched": "2026-06-17",
-      "summary": "Personal website.",
-      "tags": ["personal-site", "cloudflare"]
-    },
-    {
-      "id": "macdown-pro-plus-ultra",
-      "name": "MacDown Pro Plus Ultra",
-      "status": "maintenance",
-      "last_touched": "2026-05-17",
-      "summary": "MacDown-based macOS app for my writing workflow.",
-      "tags": ["macos", "utility", "app"]
-    },
-    {
-      "id": "ghostty-pro-plus-ultra",
-      "name": "Ghostty Pro Plus Ultra",
-      "status": "maintenance",
-      "last_touched": "2026-06-28",
-      "summary": "Terminal app for my macOS workflow.",
-      "tags": ["macos", "utility", "app"]
+      "summary": "Browser extension for discovering local dev servers and opening them quickly.",
+      "tags": ["browser-extension", "devtool", "utility"]
     },
     {
       "id": "maccy-pro-plus-ultra",
@@ -165,36 +133,12 @@
       "tags": ["macos", "utility", "app"]
     },
     {
-      "id": "bleunlock-pro-plus-ultra",
-      "name": "BLEUnlock Pro Plus Ultra",
+      "id": "ghostty-pro-plus-ultra",
+      "name": "Ghostty Pro Plus Ultra",
       "status": "maintenance",
-      "last_touched": "2026-04-30",
-      "summary": "BLE-based macOS unlock and wake utility.",
+      "last_touched": "2026-06-28",
+      "summary": "Terminal app for my macOS workflow.",
       "tags": ["macos", "utility", "app"]
-    },
-    {
-      "id": "too-many-projects-chromeext",
-      "name": "Too Many Projects Chrome Extension",
-      "status": "prototype",
-      "last_touched": "2026-06-29",
-      "summary": "Browser extension for discovering local dev servers and opening them quickly.",
-      "tags": ["browser-extension", "devtool", "utility"]
-    },
-    {
-      "id": "extweets",
-      "name": "ExTweets",
-      "status": "prototype",
-      "last_touched": "2026-06-10",
-      "summary": "X/Twitter tooling experiment for agent-driven workflows.",
-      "tags": ["app", "ai", "product"]
-    },
-    {
-      "id": "adobe-bug-bounty",
-      "name": "Adobe Bug Bounty",
-      "status": "paused",
-      "last_touched": "2026-05-31",
-      "summary": "AI-assisted bug bounty research project.",
-      "tags": ["security", "ai", "research"]
     },
     {
       "id": "newgame",
@@ -221,82 +165,10 @@
       "tags": ["finance", "research", "visualization"]
     },
     {
-      "id": "windowvision",
-      "name": "WindowVision",
-      "status": "archived",
-      "last_touched": "2026-06-29",
-      "summary": "Room and window extraction prototype for window-covering workflows.",
-      "tags": ["app", "ai"]
-    },
-    {
-      "id": "slop2prod",
-      "name": "slop2prod",
-      "status": "archived",
-      "last_touched": "2026-06-29",
-      "summary": "AI-assisted code review and hardening experiment.",
-      "tags": ["devtool", "ai", "security"]
-    },
-    {
-      "id": "waitless-noholdbot",
-      "name": "Waitless / NoHoldBot",
-      "status": "archived",
-      "last_touched": "2026-06-29",
-      "summary": "Phone-hold and wait-time automation experiment.",
-      "tags": ["automation", "app", "utility"]
-    },
-    {
-      "id": "shadowai-monitor",
-      "name": "ShadowAI Monitor",
-      "status": "archived",
-      "last_touched": "2026-04-05",
-      "summary": "Shadow-AI monitoring concept.",
-      "tags": ["security", "ai"]
-    },
-    {
-      "id": "quorum-backtester",
-      "name": "Quorum Backtester",
-      "status": "archived",
-      "last_touched": "2026-06-29",
-      "summary": "Backtesting experiment for the Quorum finance idea.",
-      "tags": ["finance", "research"]
-    },
-    {
-      "id": "prhub",
-      "name": "PRHub",
-      "status": "archived",
-      "last_touched": "2026-06-29",
-      "summary": "Pull-request and review hub experiment.",
-      "tags": ["devtool", "app"]
-    },
-    {
-      "id": "openmicform",
-      "name": "OpenMicForm",
-      "status": "archived",
-      "last_touched": "2026-06-29",
-      "summary": "Form-capture prototype.",
-      "tags": ["app"]
-    },
-    {
-      "id": "droneto311",
-      "name": "DroneTO-311",
-      "status": "archived",
-      "last_touched": "2026-06-29",
-      "summary": "Hackathon project for a Toronto 311 drone/civic concept.",
-      "tags": ["app", "civic"]
-    },
-    {
-      "id": "simpledocket",
-      "name": "SimpleDocket",
-      "status": "archived",
-      "last_touched": "2026-06-29",
-      "summary": "Docket-style app prototype.",
-      "tags": ["app"]
-    },
-    {
       "id": "spiky-intelligence",
       "name": "Spiky Intelligence",
       "status": "archived",
-      "last_touched": "2026-06-29",
+      "last_touched": "2026-06-25",
       "summary": "Jagged AI capability visualization concept.",
       "tags": ["ai", "research", "visualization"]
     },
@@ -304,15 +176,143 @@
       "id": "layoff-dividend-simulator",
       "name": "Layoff Dividend Simulator",
       "status": "archived",
-      "last_touched": "2026-06-29",
+      "last_touched": "2026-06-25",
       "summary": "Layoff and retention dividend simulator.",
       "tags": ["finance", "research"]
+    },
+    {
+      "id": "extweets",
+      "name": "ExTweets",
+      "status": "prototype",
+      "last_touched": "2026-06-10",
+      "summary": "X/Twitter tooling experiment for agent-driven workflows.",
+      "tags": ["app", "ai", "product"]
+    },
+    {
+      "id": "adobe-bug-bounty",
+      "name": "Adobe Bug Bounty",
+      "status": "paused",
+      "last_touched": "2026-05-31",
+      "summary": "AI-assisted bug bounty research project.",
+      "tags": ["security", "ai", "research"]
+    },
+    {
+      "id": "macdown-pro-plus-ultra",
+      "name": "MacDown Pro Plus Ultra",
+      "status": "maintenance",
+      "last_touched": "2026-05-17",
+      "summary": "MacDown-based macOS app for my writing workflow.",
+      "tags": ["macos", "utility", "app"]
+    },
+    {
+      "id": "bleunlock-pro-plus-ultra",
+      "name": "BLEUnlock Pro Plus Ultra",
+      "status": "maintenance",
+      "last_touched": "2026-04-30",
+      "summary": "BLE-based macOS unlock and wake utility.",
+      "tags": ["macos", "utility", "app"]
+    },
+    {
+      "id": "anouardotca",
+      "name": "Anouar.ca",
+      "status": "maintenance",
+      "last_touched": "2026-06-17",
+      "summary": "Personal website.",
+      "tags": ["personal-site", "cloudflare"]
+    },
+    {
+      "id": "rapidscope",
+      "name": "RapidScope",
+      "status": "maintenance",
+      "last_touched": "2025-05-25",
+      "summary": "Security assessment scoping tool.",
+      "tags": ["app", "security", "product"]
+    },
+    {
+      "id": "wifi-boost",
+      "name": "Wi-Fi Boost",
+      "status": "maintenance",
+      "last_touched": "unknown",
+      "summary": "Wi-Fi utility I actively use and maintain.",
+      "tags": ["utility", "wifi"]
+    },
+    {
+      "id": "windowvision",
+      "name": "WindowVision",
+      "status": "archived",
+      "last_touched": "unknown",
+      "summary": "Room and window extraction prototype for window-covering workflows.",
+      "tags": ["app", "ai"]
+    },
+    {
+      "id": "slop2prod",
+      "name": "slop2prod",
+      "status": "archived",
+      "last_touched": "2025-07-28",
+      "summary": "AI-assisted code review and hardening experiment.",
+      "tags": ["devtool", "ai", "security"]
+    },
+    {
+      "id": "waitless-noholdbot",
+      "name": "Waitless / NoHoldBot",
+      "status": "archived",
+      "last_touched": "unknown",
+      "summary": "Phone-hold and wait-time automation experiment.",
+      "tags": ["automation", "app", "utility"]
+    },
+    {
+      "id": "shadowai-monitor",
+      "name": "ShadowAI Monitor",
+      "status": "archived",
+      "last_touched": "unknown",
+      "summary": "Shadow-AI monitoring concept.",
+      "tags": ["security", "ai"]
+    },
+    {
+      "id": "quorum-backtester",
+      "name": "Quorum Backtester",
+      "status": "archived",
+      "last_touched": "unknown",
+      "summary": "Backtesting experiment for the Quorum finance idea.",
+      "tags": ["finance", "research"]
+    },
+    {
+      "id": "prhub",
+      "name": "PRHub",
+      "status": "archived",
+      "last_touched": "unknown",
+      "summary": "Pull-request and review hub experiment.",
+      "tags": ["devtool", "app"]
+    },
+    {
+      "id": "openmicform",
+      "name": "OpenMicForm",
+      "status": "archived",
+      "last_touched": "unknown",
+      "summary": "Form-capture prototype.",
+      "tags": ["app"]
+    },
+    {
+      "id": "droneto311",
+      "name": "DroneTO-311",
+      "status": "archived",
+      "last_touched": "unknown",
+      "summary": "Hackathon project for a Toronto 311 drone/civic concept.",
+      "tags": ["app", "civic"]
+    },
+    {
+      "id": "simpledocket",
+      "name": "SimpleDocket",
+      "status": "archived",
+      "last_touched": "unknown",
+      "summary": "Docket-style app prototype.",
+      "tags": ["app"]
     },
     {
       "id": "voicebuddy",
       "name": "VoiceBuddy",
       "status": "archived",
-      "last_touched": "2026-06-29",
+      "last_touched": "unknown",
       "summary": "Voice assistant experiment.",
       "tags": ["voice", "ai", "app"]
     },
@@ -320,7 +320,7 @@
       "id": "realtimevoiceagent",
       "name": "Realtime Voice Agent",
       "status": "archived",
-      "last_touched": "2026-06-29",
+      "last_touched": "unknown",
       "summary": "Realtime audio agent experiment.",
       "tags": ["voice", "ai"]
     }
