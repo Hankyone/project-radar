@@ -33,11 +33,11 @@
     "app",
     "automation",
     "browser-extension",
+    "civic",
     "cloudflare",
     "consumer",
     "devtool",
     "finance",
-    "fork",
     "game",
     "grc",
     "hardware",
@@ -50,6 +50,7 @@
     "robotics",
     "rss",
     "security",
+    "software",
     "utility",
     "visualization",
     "voice",
@@ -66,7 +67,7 @@
       "name": "Project Radar",
       "status": "maintenance",
       "last_touched": "2026-06-29",
-      "summary": "Public-safe tracker for remembering prototypes, maintained apps, paused work, and archived projects.",
+      "summary": "This site.",
       "tags": ["internal-tool", "utility"],
       "links": [
         {"label": "site", "url": "https://radar.anouar.ca"}
@@ -99,17 +100,17 @@
     {
       "id": "deadsimplerss",
       "name": "deadsimpleRSS",
-      "status": "maintenance",
+      "status": "building",
       "last_touched": "2026-06-29",
-      "summary": "RSS reader app with a small user base, currently maintained with room for future features.",
+      "summary": "RSS reader app with users, actively being built out while kept running.",
       "tags": ["app", "rss", "product"]
     },
     {
       "id": "rapidrecap",
       "name": "RapidRecap",
-      "status": "maintenance",
-      "last_touched": "2026-06-15",
-      "summary": "YouTube recap app with users, public sharing, guest usage, and ongoing maintenance.",
+      "status": "building",
+      "last_touched": "2026-06-29",
+      "summary": "YouTube recap app with users, public sharing, guest usage, and active product work.",
       "tags": ["app", "ai", "product"]
     },
     {
@@ -137,6 +138,38 @@
       "tags": ["personal-site", "cloudflare"]
     },
     {
+      "id": "macdown-pro-plus-ultra",
+      "name": "MacDown Pro Plus Ultra",
+      "status": "maintenance",
+      "last_touched": "2026-05-17",
+      "summary": "Personal MacDown-based macOS app maintained for my own workflow.",
+      "tags": ["macos", "utility", "app"]
+    },
+    {
+      "id": "ghostty-pro-plus-ultra",
+      "name": "Ghostty Pro Plus Ultra",
+      "status": "maintenance",
+      "last_touched": "2026-06-28",
+      "summary": "Personal terminal app maintained for my own workflow.",
+      "tags": ["macos", "utility", "app"]
+    },
+    {
+      "id": "maccy",
+      "name": "Maccy Pro Plus Ultra",
+      "status": "maintenance",
+      "last_touched": "2026-06-29",
+      "summary": "Personal clipboard manager app maintained for my own workflow.",
+      "tags": ["macos", "utility", "app"]
+    },
+    {
+      "id": "bleunlock-pro-plus-ultra",
+      "name": "BLEUnlock Pro Plus Ultra",
+      "status": "maintenance",
+      "last_touched": "2026-04-30",
+      "summary": "Personal macOS utility for BLE-based unlock or display wake behavior.",
+      "tags": ["macos", "utility", "app"]
+    },
+    {
       "id": "too-many-projects-chromeext",
       "name": "Too Many Projects Chrome Extension",
       "status": "prototype",
@@ -153,22 +186,6 @@
       "tags": ["app", "ai", "product"]
     },
     {
-      "id": "voicebuddy",
-      "name": "VoiceBuddy",
-      "status": "prototype",
-      "last_touched": "2026-05-01",
-      "summary": "Voice experiment kept separate from other realtime voice agent work.",
-      "tags": ["voice", "ai", "app"]
-    },
-    {
-      "id": "realtimevoiceagent",
-      "name": "Realtime Voice Agent",
-      "status": "prototype",
-      "last_touched": "2026-06-29",
-      "summary": "Realtime voice agent experiment for live audio interaction workflows.",
-      "tags": ["voice", "ai", "prototype"]
-    },
-    {
       "id": "adobe-bug-bounty",
       "name": "Adobe Bug Bounty",
       "status": "paused",
@@ -182,7 +199,7 @@
       "status": "prototype",
       "last_touched": "2026-06-28",
       "summary": "Experiment with different self-contained web game concepts.",
-      "tags": ["game", "prototype", "consumer"]
+      "tags": ["game", "consumer"]
     },
     {
       "id": "neartalk",
@@ -190,23 +207,7 @@
       "status": "prototype",
       "last_touched": "2026-06-28",
       "summary": "Experimental project around nearby conversation capture or translation concepts.",
-      "tags": ["ai", "app", "prototype"]
-    },
-    {
-      "id": "spiky-intelligence",
-      "name": "Spiky Intelligence",
-      "status": "prototype",
-      "last_touched": "2026-06-25",
-      "summary": "Concept experiment for visualizing uneven or jagged AI capability improvements.",
-      "tags": ["ai", "research", "visualization"]
-    },
-    {
-      "id": "layoff-dividend-simulator",
-      "name": "Layoff Dividend Simulator",
-      "status": "prototype",
-      "last_touched": "2026-06-25",
-      "summary": "Concept simulator for experimenting with layoff, payroll, and retention dividend ideas.",
-      "tags": ["finance", "research", "prototype"]
+      "tags": ["ai", "app"]
     },
     {
       "id": "capital-flow-tool",
@@ -217,44 +218,12 @@
       "tags": ["finance", "research", "visualization"]
     },
     {
-      "id": "macdown-pro-plus-ultra",
-      "name": "MacDown Pro Plus Ultra",
-      "status": "prototype",
-      "last_touched": "2026-05-17",
-      "summary": "Personal fork of MacDown with custom app behavior, release handling, and utility improvements.",
-      "tags": ["macos", "fork", "utility"]
-    },
-    {
-      "id": "ghostty-pro-plus-ultra",
-      "name": "Ghostty Pro Plus Ultra",
-      "status": "prototype",
-      "last_touched": "2026-06-28",
-      "summary": "Personal fork/customization track for Ghostty-style terminal workflow improvements.",
-      "tags": ["macos", "fork", "utility"]
-    },
-    {
-      "id": "maccy",
-      "name": "Maccy Fork",
-      "status": "prototype",
-      "last_touched": "2026-06-29",
-      "summary": "Personal fork/customization track for a clipboard manager.",
-      "tags": ["macos", "fork", "utility"]
-    },
-    {
-      "id": "bleunlock-pro-plus-ultra",
-      "name": "BLEUnlock Pro Plus Ultra",
-      "status": "prototype",
-      "last_touched": "2026-04-30",
-      "summary": "Personal fork/customization track for BLE-based unlock or display wake behavior.",
-      "tags": ["macos", "fork", "utility"]
-    },
-    {
       "id": "windowvision",
       "name": "WindowVision",
       "status": "archived",
       "last_touched": "2026-06-29",
       "summary": "Retired window-covering and room/window extraction prototype.",
-      "tags": ["app", "ai", "prototype"]
+      "tags": ["app", "ai"]
     },
     {
       "id": "slop2prod",
@@ -278,7 +247,7 @@
       "status": "archived",
       "last_touched": "2026-04-05",
       "summary": "Archived shadow-AI monitoring concept.",
-      "tags": ["security", "ai", "prototype"]
+      "tags": ["security", "ai"]
     },
     {
       "id": "quorum-backtester",
@@ -286,7 +255,7 @@
       "status": "archived",
       "last_touched": "2026-06-29",
       "summary": "Archived backtesting experiment connected to the Quorum idea.",
-      "tags": ["finance", "research", "prototype"]
+      "tags": ["finance", "research"]
     },
     {
       "id": "prhub",
@@ -294,7 +263,7 @@
       "status": "archived",
       "last_touched": "2026-06-29",
       "summary": "Archived pull-request or review hub experiment.",
-      "tags": ["devtool", "app", "prototype"]
+      "tags": ["devtool", "app"]
     },
     {
       "id": "openmicform",
@@ -302,7 +271,7 @@
       "status": "archived",
       "last_touched": "2026-06-29",
       "summary": "Archived form-capture prototype.",
-      "tags": ["app", "prototype"]
+      "tags": ["app"]
     },
     {
       "id": "droneto311",
@@ -310,7 +279,7 @@
       "status": "archived",
       "last_touched": "2026-06-29",
       "summary": "Archived hackathon project.",
-      "tags": ["app", "prototype", "civic"]
+      "tags": ["app", "civic"]
     },
     {
       "id": "simpledocket",
@@ -318,7 +287,39 @@
       "status": "archived",
       "last_touched": "2026-06-29",
       "summary": "Archived docket-style app prototype.",
-      "tags": ["app", "prototype"]
+      "tags": ["app"]
+    },
+    {
+      "id": "spiky-intelligence",
+      "name": "Spiky Intelligence",
+      "status": "archived",
+      "last_touched": "2026-06-29",
+      "summary": "Archived concept experiment for visualizing uneven or jagged AI capability improvements.",
+      "tags": ["ai", "research", "visualization"]
+    },
+    {
+      "id": "layoff-dividend-simulator",
+      "name": "Layoff Dividend Simulator",
+      "status": "archived",
+      "last_touched": "2026-06-29",
+      "summary": "Archived simulator for experimenting with layoff, payroll, and retention dividend ideas.",
+      "tags": ["finance", "research"]
+    },
+    {
+      "id": "voicebuddy",
+      "name": "VoiceBuddy",
+      "status": "archived",
+      "last_touched": "2026-06-29",
+      "summary": "Archived voice experiment.",
+      "tags": ["voice", "ai", "app"]
+    },
+    {
+      "id": "realtimevoiceagent",
+      "name": "Realtime Voice Agent",
+      "status": "archived",
+      "last_touched": "2026-06-29",
+      "summary": "Archived realtime voice agent experiment.",
+      "tags": ["voice", "ai"]
     }
   ]
 }
