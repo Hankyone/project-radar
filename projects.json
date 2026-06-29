@@ -77,7 +77,7 @@
     },
     {
       "id": "controls",
-      "name": "Controls",
+      "name": "Control+S",
       "status": "building",
       "last_touched": "2026-06-29",
       "summary": "Control assessment platform for GRC work.",
