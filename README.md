@@ -1,37 +1,53 @@
 # Project Radar
 
-Public-safe one-page project dashboard.
+Public-safe one-page project tracker.
 
-This repo is meant to be updated from a pinned ChatGPT thread. The dashboard reads `projects.json` and renders project cards grouped by status, priority, and freshness.
+This repo is meant to be updated from a pinned ChatGPT thread. The page reads `projects.json` and renders project cards grouped by status, priority, and freshness.
 
 ## Files
 
-- `index.html`, static single-page dashboard
+- `index.html`, static single-page tracker
 - `projects.json`, project state
 - `changelog.md`, dated change history
+- `CNAME`, custom domain for `radar.anouar.ca`
 - `.nojekyll`, keeps GitHub Pages simple
+
+## Scope
+
+This tracker is not a repo audit and does not inspect or expose repository contents.
+
+Each public project entry should be limited to:
+
+- project name
+- one-line description
+- status
+- priority
+- last touched date
+- next action
+- blocker, only when public-safe
+- public links, only when intentionally public
+
+Sensitive project work can still be represented by a sanitized project name and generic one-liner. Private repository contents, client material, pentest details, credentials, targets, and internal notes stay out of this repo.
 
 ## Update model
 
 1. Drop a natural-language update in the pinned chat.
 2. The assistant updates `projects.json`.
 3. The assistant appends to `changelog.md`.
-4. `index.html` only changes when the dashboard UI changes.
+4. `index.html` only changes when the tracker UI changes.
 
-## Public safety rules
+## Public safety rule
 
-Do not commit credentials, client names, private targets, exploit details, private revenue numbers, internal URLs, or personal identifiers.
-
-Use short public-safe summaries. Keep sensitive context in the pinned chat or a private repo.
+Do not publish secrets or operational details. Keep entries as public-safe project metadata only.
 
 ## GitHub Pages
 
-Enable Pages from repository settings:
+This repo is configured for the custom domain:
+
+`https://radar.anouar.ca/`
+
+Pages source:
 
 - Source: Deploy from a branch
 - Branch: `main`
 - Folder: `/root`
-
-Expected URL:
-
-`https://hankyone.github.io/project-radar/`
