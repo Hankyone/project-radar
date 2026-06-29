@@ -33,6 +33,7 @@
     "app",
     "automation",
     "browser-extension",
+    "canary",
     "civic",
     "cloudflare",
     "consumer",
@@ -41,6 +42,7 @@
     "game",
     "grc",
     "hardware",
+    "infrastructure",
     "internal-tool",
     "ios",
     "macos",
@@ -52,6 +54,7 @@
     "security",
     "software",
     "utility",
+    "video",
     "visualization",
     "voice",
     "wifi",
@@ -78,23 +81,23 @@
       "name": "Controls",
       "status": "building",
       "last_touched": "2026-06-29",
-      "summary": "Control assessment platform for GRC work and the main commercial product push.",
+      "summary": "Control assessment platform for GRC work.",
       "tags": ["product", "grc", "security"]
     },
     {
-      "id": "canary-intelligence",
-      "name": "Canary Intelligence",
+      "id": "canary-grid",
+      "name": "Canary Grid",
       "status": "building",
       "last_touched": "2026-06-29",
-      "summary": "Security intelligence tool using canary tokens to detect and attribute unexpected access paths.",
-      "tags": ["security", "research", "product"]
+      "summary": "Canary-token grid for testing AI infrastructure layers, including inference providers, routers, agents, and AI apps.",
+      "tags": ["security", "ai", "canary", "infrastructure"]
     },
     {
       "id": "rx1stack",
       "name": "RX1 Stack",
       "status": "building",
       "last_touched": "2026-06-29",
-      "summary": "Current robotics/control stack work around the RX1 hardware project.",
+      "summary": "Custom-built robotics control stack for the RX1 robot.",
       "tags": ["robotics", "hardware", "software"]
     },
     {
@@ -102,7 +105,7 @@
       "name": "deadsimpleRSS",
       "status": "building",
       "last_touched": "2026-06-29",
-      "summary": "RSS reader app with users, actively being built out while kept running.",
+      "summary": "Dead-simple RSS feed reader.",
       "tags": ["app", "rss", "product"]
     },
     {
@@ -110,15 +113,15 @@
       "name": "RapidRecap",
       "status": "building",
       "last_touched": "2026-06-29",
-      "summary": "YouTube recap app with users, public sharing, guest usage, and active product work.",
-      "tags": ["app", "ai", "product"]
+      "summary": "YouTube summarization tool that uses video understanding and creates short clips from the content.",
+      "tags": ["app", "ai", "video", "product"]
     },
     {
       "id": "rapidscope",
       "name": "RapidScope",
       "status": "maintenance",
       "last_touched": "2026-05-20",
-      "summary": "ShadeSec scoping tool that still exists publicly and is being used.",
+      "summary": "Security assessment scoping tool.",
       "tags": ["app", "security", "product"]
     },
     {
@@ -126,7 +129,7 @@
       "name": "Wi-Fi Boost",
       "status": "maintenance",
       "last_touched": "2026-06-29",
-      "summary": "Personal utility tool that is actively used and maintained.",
+      "summary": "Wi-Fi utility I actively use and maintain.",
       "tags": ["utility", "wifi"]
     },
     {
@@ -134,7 +137,7 @@
       "name": "Anouar.ca",
       "status": "maintenance",
       "last_touched": "2026-06-17",
-      "summary": "Personal website, currently maintained rather than treated as a standalone product.",
+      "summary": "Personal website.",
       "tags": ["personal-site", "cloudflare"]
     },
     {
@@ -142,7 +145,7 @@
       "name": "MacDown Pro Plus Ultra",
       "status": "maintenance",
       "last_touched": "2026-05-17",
-      "summary": "Personal MacDown-based macOS app maintained for my own workflow.",
+      "summary": "MacDown-based macOS app for my writing workflow.",
       "tags": ["macos", "utility", "app"]
     },
     {
@@ -150,15 +153,15 @@
       "name": "Ghostty Pro Plus Ultra",
       "status": "maintenance",
       "last_touched": "2026-06-28",
-      "summary": "Personal terminal app maintained for my own workflow.",
+      "summary": "Terminal app for my macOS workflow.",
       "tags": ["macos", "utility", "app"]
     },
     {
-      "id": "maccy",
+      "id": "maccy-pro-plus-ultra",
       "name": "Maccy Pro Plus Ultra",
       "status": "maintenance",
       "last_touched": "2026-06-29",
-      "summary": "Personal clipboard manager app maintained for my own workflow.",
+      "summary": "Clipboard manager app for my macOS workflow.",
       "tags": ["macos", "utility", "app"]
     },
     {
@@ -166,7 +169,7 @@
       "name": "BLEUnlock Pro Plus Ultra",
       "status": "maintenance",
       "last_touched": "2026-04-30",
-      "summary": "Personal macOS utility for BLE-based unlock or display wake behavior.",
+      "summary": "BLE-based macOS unlock and wake utility.",
       "tags": ["macos", "utility", "app"]
     },
     {
@@ -174,7 +177,7 @@
       "name": "Too Many Projects Chrome Extension",
       "status": "prototype",
       "last_touched": "2026-06-29",
-      "summary": "Browser extension that finds local dev servers and lets you open them quickly.",
+      "summary": "Browser extension for discovering local dev servers and opening them quickly.",
       "tags": ["browser-extension", "devtool", "utility"]
     },
     {
@@ -182,7 +185,7 @@
       "name": "ExTweets",
       "status": "prototype",
       "last_touched": "2026-06-10",
-      "summary": "X-related agent/tooling project with account connection, usage controls, and metering experiments.",
+      "summary": "X/Twitter tooling experiment for agent-driven workflows.",
       "tags": ["app", "ai", "product"]
     },
     {
@@ -190,7 +193,7 @@
       "name": "Adobe Bug Bounty",
       "status": "paused",
       "last_touched": "2026-05-31",
-      "summary": "Side project exploring AI-assisted vulnerability research against an external bug bounty target.",
+      "summary": "AI-assisted bug bounty research project.",
       "tags": ["security", "ai", "research"]
     },
     {
@@ -198,7 +201,7 @@
       "name": "NewGame",
       "status": "prototype",
       "last_touched": "2026-06-28",
-      "summary": "Experiment with different self-contained web game concepts.",
+      "summary": "Self-contained web game experiment.",
       "tags": ["game", "consumer"]
     },
     {
@@ -206,15 +209,15 @@
       "name": "NearTalk",
       "status": "prototype",
       "last_touched": "2026-06-28",
-      "summary": "Experimental project around nearby conversation capture or translation concepts.",
-      "tags": ["ai", "app"]
+      "summary": "Nearby conversation capture and translation experiment.",
+      "tags": ["ai", "app", "voice"]
     },
     {
       "id": "capital-flow-tool",
       "name": "Capital Flow Tool",
       "status": "prototype",
       "last_touched": "2026-06-25",
-      "summary": "Capital flow dashboard concept for exploring market or investment movement ideas.",
+      "summary": "Capital flow visualization dashboard.",
       "tags": ["finance", "research", "visualization"]
     },
     {
@@ -222,7 +225,7 @@
       "name": "WindowVision",
       "status": "archived",
       "last_touched": "2026-06-29",
-      "summary": "Retired window-covering and room/window extraction prototype.",
+      "summary": "Room and window extraction prototype for window-covering workflows.",
       "tags": ["app", "ai"]
     },
     {
@@ -230,7 +233,7 @@
       "name": "slop2prod",
       "status": "archived",
       "last_touched": "2026-06-29",
-      "summary": "Retired code review and AI-code hardening product experiment.",
+      "summary": "AI-assisted code review and hardening experiment.",
       "tags": ["devtool", "ai", "security"]
     },
     {
@@ -238,7 +241,7 @@
       "name": "Waitless / NoHoldBot",
       "status": "archived",
       "last_touched": "2026-06-29",
-      "summary": "Retired wait-time or phone-hold automation project.",
+      "summary": "Phone-hold and wait-time automation experiment.",
       "tags": ["automation", "app", "utility"]
     },
     {
@@ -246,7 +249,7 @@
       "name": "ShadowAI Monitor",
       "status": "archived",
       "last_touched": "2026-04-05",
-      "summary": "Archived shadow-AI monitoring concept.",
+      "summary": "Shadow-AI monitoring concept.",
       "tags": ["security", "ai"]
     },
     {
@@ -254,7 +257,7 @@
       "name": "Quorum Backtester",
       "status": "archived",
       "last_touched": "2026-06-29",
-      "summary": "Archived backtesting experiment connected to the Quorum idea.",
+      "summary": "Backtesting experiment for the Quorum finance idea.",
       "tags": ["finance", "research"]
     },
     {
@@ -262,7 +265,7 @@
       "name": "PRHub",
       "status": "archived",
       "last_touched": "2026-06-29",
-      "summary": "Archived pull-request or review hub experiment.",
+      "summary": "Pull-request and review hub experiment.",
       "tags": ["devtool", "app"]
     },
     {
@@ -270,7 +273,7 @@
       "name": "OpenMicForm",
       "status": "archived",
       "last_touched": "2026-06-29",
-      "summary": "Archived form-capture prototype.",
+      "summary": "Form-capture prototype.",
       "tags": ["app"]
     },
     {
@@ -278,7 +281,7 @@
       "name": "DroneTO-311",
       "status": "archived",
       "last_touched": "2026-06-29",
-      "summary": "Archived hackathon project.",
+      "summary": "Hackathon project for a Toronto 311 drone/civic concept.",
       "tags": ["app", "civic"]
     },
     {
@@ -286,7 +289,7 @@
       "name": "SimpleDocket",
       "status": "archived",
       "last_touched": "2026-06-29",
-      "summary": "Archived docket-style app prototype.",
+      "summary": "Docket-style app prototype.",
       "tags": ["app"]
     },
     {
@@ -294,7 +297,7 @@
       "name": "Spiky Intelligence",
       "status": "archived",
       "last_touched": "2026-06-29",
-      "summary": "Archived concept experiment for visualizing uneven or jagged AI capability improvements.",
+      "summary": "Jagged AI capability visualization concept.",
       "tags": ["ai", "research", "visualization"]
     },
     {
@@ -302,7 +305,7 @@
       "name": "Layoff Dividend Simulator",
       "status": "archived",
       "last_touched": "2026-06-29",
-      "summary": "Archived simulator for experimenting with layoff, payroll, and retention dividend ideas.",
+      "summary": "Layoff and retention dividend simulator.",
       "tags": ["finance", "research"]
     },
     {
@@ -310,7 +313,7 @@
       "name": "VoiceBuddy",
       "status": "archived",
       "last_touched": "2026-06-29",
-      "summary": "Archived voice experiment.",
+      "summary": "Voice assistant experiment.",
       "tags": ["voice", "ai", "app"]
     },
     {
@@ -318,7 +321,7 @@
       "name": "Realtime Voice Agent",
       "status": "archived",
       "last_touched": "2026-06-29",
-      "summary": "Archived realtime voice agent experiment.",
+      "summary": "Realtime audio agent experiment.",
       "tags": ["voice", "ai"]
     }
   ]
