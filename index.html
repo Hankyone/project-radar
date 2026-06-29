@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     :root {
       --paper: #f2efe8;
       --paper-high: #f9f7f1;
@@ -25,7 +24,6 @@
       --serif: 'EB Garamond', Georgia, serif;
       --mono: 'Fragment Mono', 'Courier New', monospace;
     }
-
     html { font-size: 17px; scrollbar-color: var(--ink-3) var(--paper); scrollbar-width: thin; }
     body {
       font-family: var(--serif);
@@ -39,7 +37,6 @@
       overflow-x: clip;
       -webkit-tap-highlight-color: transparent;
     }
-
     .grain {
       position: fixed;
       inset: 0;
@@ -50,12 +47,9 @@
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
       background-size: 160px;
     }
-
     ::selection { background: var(--loden); color: var(--paper); }
     :focus-visible { outline: 1px solid var(--loden); outline-offset: 3px; }
-
     .page { max-width: 46rem; margin: 0 auto; padding: 4.5rem 1.75rem 3rem; }
-
     .micro {
       font-family: var(--mono);
       font-size: 0.6rem;
@@ -63,7 +57,6 @@
       text-transform: uppercase;
       color: var(--ink-3);
     }
-
     .masthead-row {
       display: flex;
       justify-content: space-between;
@@ -72,7 +65,6 @@
       margin-bottom: 4.5rem;
       position: relative;
     }
-
     .masthead-row::after {
       content: '';
       position: absolute;
@@ -84,277 +76,51 @@
       transform-origin: left center;
       animation: draw 1.3s cubic-bezier(0.2, 0.7, 0.2, 1) 0.15s both;
     }
-
     @keyframes draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-
-    .stamp {
-      color: var(--loden-soft);
-      border: 1px solid currentColor;
-      padding: 0.18rem 0.5rem 0.12rem;
-      transform: rotate(-1.5deg);
-    }
-
-    .identity {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      gap: 2.5rem;
-      margin-bottom: 3.6rem;
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 7vw, 3.4rem);
-      font-weight: 400;
-      letter-spacing: -0.015em;
-      line-height: 1.05;
-    }
-
-    .credential {
-      font-family: var(--mono);
-      font-size: 0.58rem;
-      letter-spacing: 0.22em;
-      color: var(--ink-3);
-      vertical-align: 1.7em;
-      margin-left: 0.7em;
-    }
-
-    .tagline {
-      font-style: italic;
-      font-size: 1.2rem;
-      color: var(--ink-2);
-      margin-top: 0.7rem;
-      max-width: 36rem;
-    }
-
-    .console {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.2rem 1.8rem;
-      border-top: 1px solid var(--hairline-soft);
-      border-bottom: 1px solid var(--hairline-soft);
-      padding: 0.85rem 0;
-      margin-bottom: 2.9rem;
-    }
-
-    .channel-label {
-      display: block;
-      font-family: var(--mono);
-      font-size: 0.56rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--ink-3);
-    }
-
-    .channel-value {
-      display: block;
-      font-size: 1rem;
-      color: var(--ink-2);
-      margin-top: 0.08rem;
-    }
-
-    .filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.4rem;
-      margin-bottom: 0.65rem;
-      padding-bottom: 0.9rem;
-      border-bottom: 1px solid var(--hairline-soft);
-    }
-
-    .filter-tools {
-      display: flex;
-      justify-content: flex-end;
-      margin-bottom: 1rem;
-    }
-
-    .filter-btn,
-    .tiny-btn {
-      font-family: var(--mono);
-      font-size: 0.62rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--ink-2);
-      text-decoration: none;
-      background: none;
-      border: none;
-      padding: 0 0 0.25rem;
-      cursor: pointer;
-      position: relative;
-      transition: color 0.25s ease;
-    }
-
-    .tiny-btn {
-      font-size: 0.52rem;
-      letter-spacing: 0.16em;
-      color: var(--ink-3);
-    }
-
-    .filter-btn::after,
-    .tiny-btn::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 1px;
-      background: var(--hairline);
-      transition: background-color 0.25s ease;
-    }
-
-    .filter-btn:hover,
-    .filter-btn.active,
-    .tiny-btn:hover { color: var(--ink); }
-    .filter-btn:hover::after,
-    .filter-btn.active::after,
-    .tiny-btn:hover::after { background: var(--loden); }
-
-    .row {
-      display: grid;
-      grid-template-columns: 10rem 1fr;
-      gap: 2.5rem;
-      padding: 3.4rem 0 2.4rem;
-      border-bottom: 1px solid var(--hairline-soft);
-    }
-
+    .stamp { color: var(--loden-soft); border: 1px solid currentColor; padding: 0.18rem 0.5rem 0.12rem; transform: rotate(-1.5deg); }
+    .identity { margin-bottom: 3.6rem; }
+    h1 { font-size: clamp(2.5rem, 7vw, 3.4rem); font-weight: 400; letter-spacing: -0.015em; line-height: 1.05; }
+    .credential { font-family: var(--mono); font-size: 0.58rem; letter-spacing: 0.22em; color: var(--ink-3); vertical-align: 1.7em; margin-left: 0.7em; }
+    .tagline { font-style: italic; font-size: 1.2rem; color: var(--ink-2); margin-top: 0.7rem; max-width: 36rem; }
+    .console { display: flex; flex-wrap: wrap; gap: 1.2rem 1.8rem; border-top: 1px solid var(--hairline-soft); border-bottom: 1px solid var(--hairline-soft); padding: 0.85rem 0; margin-bottom: 2.9rem; }
+    .channel-label { display: block; font-family: var(--mono); font-size: 0.56rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); }
+    .channel-value { display: block; font-size: 1rem; color: var(--ink-2); margin-top: 0.08rem; }
+    .filters { display: flex; flex-wrap: wrap; gap: 1.4rem; margin-bottom: 0.65rem; padding-bottom: 0.9rem; border-bottom: 1px solid var(--hairline-soft); }
+    .filter-tools { display: flex; justify-content: flex-end; margin-bottom: 1rem; }
+    .filter-btn, .tiny-btn { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-2); text-decoration: none; background: none; border: none; padding: 0 0 0.25rem; cursor: pointer; position: relative; transition: color 0.25s ease; }
+    .tiny-btn { font-size: 0.52rem; letter-spacing: 0.16em; color: var(--ink-3); }
+    .filter-btn::after, .tiny-btn::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background: var(--hairline); transition: background-color 0.25s ease; }
+    .filter-btn:hover, .filter-btn.active, .tiny-btn:hover { color: var(--ink); }
+    .filter-btn:hover::after, .filter-btn.active::after, .tiny-btn:hover::after { background: var(--loden); }
+    .row { display: grid; grid-template-columns: 10rem 1fr; gap: 2.5rem; padding: 3.4rem 0 2.4rem; border-bottom: 1px solid var(--hairline-soft); }
     .side { display: flex; align-items: baseline; gap: 0.8rem; }
     .side-no { font-family: var(--mono); font-size: 0.6rem; color: var(--loden-soft); }
-    h2 {
-      font-family: var(--mono);
-      font-size: 0.62rem;
-      font-weight: 400;
-      letter-spacing: 0.24em;
-      text-transform: uppercase;
-      color: var(--ink-3);
-    }
-
+    h2 { font-family: var(--mono); font-size: 0.62rem; font-weight: 400; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ink-3); }
     .index-item { border-bottom: 1px solid var(--hairline-soft); }
     .index-item:first-child .index-trigger { padding-top: 0.2rem; }
-    .index-trigger {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      gap: 0.9rem;
-      padding: 0.95rem 0;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-family: inherit;
-      text-align: left;
-    }
-
-    .index-no {
-      font-family: var(--mono);
-      font-size: 0.58rem;
-      color: var(--loden-soft);
-      width: 1.2rem;
-      flex-shrink: 0;
-      font-style: italic;
-    }
-
+    .index-trigger { width: 100%; display: flex; align-items: center; gap: 0.9rem; padding: 0.95rem 0; background: none; border: none; cursor: pointer; font-family: inherit; text-align: left; }
+    .index-no { font-family: var(--mono); font-size: 0.58rem; color: var(--loden-soft); width: 1.2rem; flex-shrink: 0; font-style: italic; }
     .index-name { font-size: 1.12rem; color: var(--ink); transition: color 0.3s ease; }
-    .index-trigger:hover .index-name,
-    .index-trigger:active .index-name { color: var(--loden); }
-
-    .index-meta {
-      margin-left: auto;
-      font-family: var(--mono);
-      font-size: 0.56rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--ink-3);
-      white-space: nowrap;
-    }
-
-    .index-plus {
-      position: relative;
-      width: 11px;
-      height: 11px;
-      flex-shrink: 0;
-      margin-left: 0.4rem;
-      transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1);
-    }
-
-    .index-plus::before,
-    .index-plus::after {
-      content: '';
-      position: absolute;
-      background: var(--ink-3);
-      transition: background-color 0.3s ease;
-    }
-
+    .index-trigger:hover .index-name, .index-trigger:active .index-name { color: var(--loden); }
+    .index-meta { margin-left: auto; font-family: var(--mono); font-size: 0.56rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; }
+    .index-plus { position: relative; width: 11px; height: 11px; flex-shrink: 0; margin-left: 0.4rem; transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1); }
+    .index-plus::before, .index-plus::after { content: ''; position: absolute; background: var(--ink-3); transition: background-color 0.3s ease; }
     .index-plus::before { width: 11px; height: 1px; top: 5px; left: 0; }
     .index-plus::after { width: 1px; height: 11px; left: 5px; top: 0; }
-    .index-trigger:hover .index-plus::before,
-    .index-trigger:hover .index-plus::after { background: var(--loden); }
+    .index-trigger:hover .index-plus::before, .index-trigger:hover .index-plus::after { background: var(--loden); }
     .index-trigger[aria-expanded="true"] .index-plus { transform: rotate(45deg); }
-
-    .index-content {
-      display: grid;
-      grid-template-rows: 0fr;
-      transition: grid-template-rows 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
-    }
-
+    .index-content { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.5s cubic-bezier(0.2, 0.7, 0.2, 1); }
     .index-inner { overflow: hidden; min-height: 0; }
     .index-trigger[aria-expanded="true"] + .index-content { grid-template-rows: 1fr; }
     .index-trigger[aria-expanded="true"] + .index-content .index-inner { padding-bottom: 1.3rem; }
-
-    .prose {
-      font-size: 0.98rem;
-      line-height: 1.78;
-      color: var(--ink-2);
-      font-variant-numeric: oldstyle-nums;
-      padding-left: 2.1rem;
-      max-width: 58ch;
-    }
-
-    .tags, .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.55rem;
-      margin: 0.7rem 0 0 2.1rem;
-    }
-
-    .tag, .index-link {
-      font-family: var(--mono);
-      font-size: 0.58rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--ink-3);
-    }
-
-    .index-link {
-      display: inline-block;
-      color: var(--ink-2);
-      text-decoration: none;
-      border-bottom: 1px solid var(--hairline);
-      padding-bottom: 0.2rem;
-      transition: color 0.25s ease, border-color 0.25s ease;
-    }
-
+    .prose { font-size: 0.98rem; line-height: 1.78; color: var(--ink-2); font-variant-numeric: oldstyle-nums; padding-left: 2.1rem; max-width: 58ch; }
+    .tags, .links { display: flex; flex-wrap: wrap; gap: 0.55rem; margin: 0.7rem 0 0 2.1rem; }
+    .tag, .index-link { font-family: var(--mono); font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
+    .index-link { display: inline-block; color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--hairline); padding-bottom: 0.2rem; transition: color 0.25s ease, border-color 0.25s ease; }
     .index-link:hover { color: var(--loden); border-color: var(--loden); }
     .empty { color: var(--ink-3); font-style: italic; padding: 1rem 0; }
-
-    footer {
-      margin-top: 2.2rem;
-      padding-top: 1.4rem;
-      border-top: 1px solid var(--hairline-soft);
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-      align-items: baseline;
-    }
-
-    @media (max-width: 640px) {
-      html { font-size: 16px; }
-      .page { padding: 2.6rem 1.2rem 2rem; }
-      .masthead-row { margin-bottom: 3rem; }
-      .identity { display: block; margin-bottom: 2.5rem; }
-      .row { display: block; padding: 2.6rem 0 1.8rem; }
-      .side { margin-bottom: 1.3rem; }
-      .index-meta { display: none; }
-      .filter-tools { justify-content: flex-start; }
-      footer { display: block; }
-    }
+    footer { margin-top: 2.2rem; padding-top: 1.4rem; border-top: 1px solid var(--hairline-soft); display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+    @media (max-width: 640px) { html { font-size: 16px; } .page { padding: 2.6rem 1.2rem 2rem; } .masthead-row { margin-bottom: 3rem; } .identity { margin-bottom: 2.5rem; } .row { display: block; padding: 2.6rem 0 1.8rem; } .side { margin-bottom: 1.3rem; } .index-meta { display: none; } .filter-tools { justify-content: flex-start; } footer { display: block; } }
   </style>
 </head>
 <body>
@@ -366,47 +132,28 @@
         <span class="micro stamp">Public</span>
       </div>
       <div class="identity">
-        <div>
-          <h1>Project Radar<span class="credential">ANOUAR.CA</span></h1>
-          <p class="tagline">A public index of prototypes, maintained apps, paused ideas, and archived experiments.</p>
-        </div>
+        <h1>Project Radar<span class="credential">ANOUAR.CA</span></h1>
+        <p class="tagline">A public index of prototypes, maintained apps, paused ideas, and archived experiments.</p>
       </div>
     </header>
 
     <section class="console" aria-label="Project totals">
-      <div class="channel">
-        <span class="channel-label">Updated</span>
-        <span class="channel-value" id="updated">Loading</span>
-      </div>
-      <div class="channel">
-        <span class="channel-label">Visible</span>
-        <span class="channel-value" id="visible-count">-</span>
-      </div>
-      <div class="channel">
-        <span class="channel-label">Total</span>
-        <span class="channel-value" id="total-count">-</span>
-      </div>
+      <div class="channel"><span class="channel-label">Updated</span><span class="channel-value" id="updated">Loading</span></div>
+      <div class="channel"><span class="channel-label">Visible</span><span class="channel-value" id="visible-count">-</span></div>
+      <div class="channel"><span class="channel-label">Total</span><span class="channel-value" id="total-count">-</span></div>
     </section>
 
     <nav class="filters" id="filters" aria-label="Project filters"></nav>
-    <div class="filter-tools">
-      <button class="tiny-btn" id="expand-all" type="button">Expand all</button>
-    </div>
+    <div class="filter-tools"><button class="tiny-btn" id="expand-all" type="button">Expand all</button></div>
 
     <main>
       <section class="row">
-        <div class="side">
-          <span class="side-no">01</span>
-          <h2>Projects</h2>
-        </div>
+        <div class="side"><span class="side-no">01</span><h2>Projects</h2></div>
         <div id="projects"></div>
       </section>
     </main>
 
-    <footer>
-      <span class="micro">radar.anouar.ca</span>
-      <span class="micro">names, status, one-liners</span>
-    </footer>
+    <footer><span class="micro">radar.anouar.ca</span><span class="micro">newest touched first</span></footer>
   </div>
 
   <script>
@@ -422,9 +169,18 @@
       return state?.status_options?.find(s => s.id === id)?.label || id;
     }
 
+    function dateKey(value) {
+      if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return 0;
+      const parsed = new Date(value + 'T00:00:00Z').getTime();
+      return Number.isFinite(parsed) ? parsed : 0;
+    }
+
     function dateLabel(value) {
-      if (!value) return 'Unknown';
-      return value;
+      return dateKey(value) ? value : 'Unknown';
+    }
+
+    function byLastTouched(a, b) {
+      return dateKey(b.last_touched) - dateKey(a.last_touched) || String(a.name).localeCompare(String(b.name));
     }
 
     function updateExpandButton() {
@@ -434,28 +190,21 @@
 
     function setAllExpanded(expanded) {
       allExpanded = expanded;
-      document.querySelectorAll('.index-trigger').forEach(trigger => {
-        trigger.setAttribute('aria-expanded', String(expanded));
-      });
+      document.querySelectorAll('.index-trigger').forEach(trigger => trigger.setAttribute('aria-expanded', String(expanded)));
       updateExpandButton();
     }
 
     function renderFilters() {
       const statuses = [{ id: 'all', label: 'All' }, ...(state?.status_options || [])];
       const filters = document.getElementById('filters');
-      filters.innerHTML = statuses.map(status => `
-        <button class="filter-btn ${selected === status.id ? 'active' : ''}" data-status="${esc(status.id)}">${esc(status.label)}</button>
-      `).join('');
+      filters.innerHTML = statuses.map(status => `<button class="filter-btn ${selected === status.id ? 'active' : ''}" data-status="${esc(status.id)}">${esc(status.label)}</button>`).join('');
       filters.querySelectorAll('button').forEach(button => {
-        button.addEventListener('click', () => {
-          selected = button.dataset.status;
-          render();
-        });
+        button.addEventListener('click', () => { selected = button.dataset.status; render(); });
       });
     }
 
     function renderProjects() {
-      const all = state?.projects || [];
+      const all = [...(state?.projects || [])].sort(byLastTouched);
       const projects = all.filter(project => selected === 'all' || project.status === selected);
       document.getElementById('updated').textContent = state?.updated_at || 'Unknown';
       document.getElementById('visible-count').textContent = projects.length;
@@ -478,15 +227,12 @@
               <span class="index-meta">${esc(statusLabel(project.status))} · ${esc(dateLabel(project.last_touched))}</span>
               <span class="index-plus" aria-hidden="true"></span>
             </button>
-            <div class="index-content">
-              <div class="index-inner">
-                <p class="prose">${esc(project.summary)}</p>
-                ${(project.tags || []).length ? `<div class="tags">${project.tags.map(tag => `<span class="tag">${esc(tag)}</span>`).join('')}</div>` : ''}
-                ${(project.links || []).length ? `<div class="links">${project.links.map(link => `<a class="index-link" href="${esc(link.url)}" target="_blank" rel="noopener">${esc(link.label)} ↗</a>`).join('')}</div>` : ''}
-              </div>
-            </div>
-          </article>
-        `;
+            <div class="index-content"><div class="index-inner">
+              <p class="prose">${esc(project.summary)}</p>
+              ${(project.tags || []).length ? `<div class="tags">${project.tags.map(tag => `<span class="tag">${esc(tag)}</span>`).join('')}</div>` : ''}
+              ${(project.links || []).length ? `<div class="links">${project.links.map(link => `<a class="index-link" href="${esc(link.url)}" target="_blank" rel="noopener">${esc(link.label)} ↗</a>`).join('')}</div>` : ''}
+            </div></div>
+          </article>`;
       }).join('');
 
       list.querySelectorAll('.index-trigger').forEach(trigger => {
@@ -506,9 +252,7 @@
       renderProjects();
     }
 
-    document.getElementById('expand-all').addEventListener('click', () => {
-      setAllExpanded(!allExpanded);
-    });
+    document.getElementById('expand-all').addEventListener('click', () => setAllExpanded(!allExpanded));
 
     fetch('projects.json', { cache: 'no-store' })
       .then(response => response.json())
