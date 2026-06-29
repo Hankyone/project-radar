@@ -1,36 +1,64 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "updated_at": "2026-06-29",
+  "status_options": [
+    {
+      "id": "prototype",
+      "label": "Prototype",
+      "description": "Built or being explored, not necessarily live or maintained."
+    },
+    {
+      "id": "maintenance",
+      "label": "Maintenance",
+      "description": "Live or useful enough to keep running, mostly upkeep and small fixes."
+    },
+    {
+      "id": "paused",
+      "label": "Paused",
+      "description": "Not active right now, but still worth remembering and possibly reviving."
+    },
+    {
+      "id": "archived",
+      "label": "Archived",
+      "description": "Worked on before, no current intention to return."
+    }
+  ],
+  "tag_options": [
+    "app",
+    "automation",
+    "browser-extension",
+    "cloudflare",
+    "consumer",
+    "devtool",
+    "finance",
+    "game",
+    "hardware",
+    "internal-tool",
+    "ios",
+    "personal-site",
+    "product",
+    "research",
+    "security",
+    "utility",
+    "writing"
+  ],
   "public_safety": {
     "visibility": "public",
-    "rules": [
-      "No credentials",
-      "No client names unless already public",
-      "No private targets",
-      "No exploit details",
-      "No private revenue numbers",
-      "No internal URLs",
-      "No personal identifiers"
-    ]
+    "rule": "Only publish project metadata: name, one-line description, status, last touched date, tags, and intentional public links."
   },
   "projects": [
     {
       "id": "project-radar",
       "name": "Project Radar",
-      "status": "Active",
-      "priority": "Now",
+      "status": "maintenance",
       "last_touched": "2026-06-29",
-      "summary": "Public-safe dashboard for tracking active, warm, parked, shipped, and dead projects.",
-      "current_thread": "Initial GitHub repo and validation workflow setup.",
-      "next_action": "Review candidate repositories before adding them to the public dashboard.",
-      "blocker": "Candidate project list needs user approval.",
-      "tags": ["ops", "dashboard", "personal"],
+      "summary": "Public-safe tracker for remembering prototypes, maintained apps, paused work, and archived projects.",
+      "tags": ["internal-tool", "utility"],
       "links": [
-        {"label": "repo", "url": "https://github.com/Hankyone/project-radar"}
+        {"label": "repo", "url": "https://github.com/Hankyone/project-radar"},
+        {"label": "site", "url": "https://radar.anouar.ca"}
       ],
-      "log": [
-        {"date": "2026-06-29", "note": "Created public repo and switched to user-approved project seeding."}
-      ]
+      "notes": "Repo and custom domain are set up. Seed list still needs approval."
     }
   ],
   "candidate_repos": []
