@@ -4,103 +4,475 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Project Radar</title>
+  <meta name="description" content="Public-safe tracker for prototypes, maintained apps, paused work, and archived projects.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23f2efe8'/><text x='50' y='72' text-anchor='middle' font-family='Georgia,serif' font-size='64' fill='%23211e1a'>R</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
   <style>
-    :root { color-scheme: light dark; --bg:#0b0d12; --card:#151923; --muted:#9aa4b2; --text:#f2f5f8; --line:#252b38; --accent:#8ab4ff; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); }
-    main { max-width: 1080px; margin: 0 auto; padding: 40px 20px; }
-    header { display:flex; justify-content:space-between; align-items:flex-end; gap:20px; margin-bottom:28px; }
-    h1 { margin:0; font-size: clamp(34px, 5vw, 64px); letter-spacing:-0.06em; line-height:0.9; }
-    .meta { color:var(--muted); text-align:right; font-size:14px; }
-    .controls { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:22px; }
-    button { border:1px solid var(--line); background:var(--card); color:var(--text); padding:8px 11px; border-radius:999px; cursor:pointer; text-transform:capitalize; }
-    button.active { border-color:var(--accent); color:var(--accent); }
-    .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:14px; }
-    .card { border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015)); border-radius:18px; padding:18px; min-height:180px; }
-    .top { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; }
-    h2 { margin:0; font-size:22px; letter-spacing:-0.03em; }
-    .badge { border:1px solid var(--line); border-radius:999px; padding:4px 8px; color:var(--muted); font-size:12px; white-space:nowrap; text-transform:capitalize; }
-    p { color:var(--muted); line-height:1.45; }
-    dl { margin:16px 0 0; display:grid; gap:10px; }
-    dt { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
-    dd { margin:2px 0 0; }
-    a { color:var(--accent); text-decoration:none; }
-    .tags, .links { display:flex; flex-wrap:wrap; gap:6px; margin-top:14px; }
-    .tag, .link { color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:3px 7px; font-size:12px; }
-    .link { color:var(--accent); }
-    .empty { color:var(--muted); border:1px dashed var(--line); border-radius:18px; padding:24px; }
-    @media (max-width: 640px) { header { display:block; } .meta { text-align:left; margin-top:16px; } }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --paper: #f2efe8;
+      --paper-high: #f9f7f1;
+      --ink: #211e1a;
+      --ink-2: #5d5850;
+      --ink-3: #8e887c;
+      --hairline: rgba(33, 30, 26, 0.16);
+      --hairline-soft: rgba(33, 30, 26, 0.09);
+      --loden: #33502f;
+      --loden-soft: rgba(51, 80, 47, 0.55);
+      --serif: 'EB Garamond', Georgia, serif;
+      --mono: 'Fragment Mono', 'Courier New', monospace;
+    }
+
+    html { font-size: 17px; scrollbar-color: var(--ink-3) var(--paper); scrollbar-width: thin; }
+    body {
+      font-family: var(--serif);
+      background: radial-gradient(120% 90% at 30% 0%, var(--paper-high) 0%, var(--paper) 55%);
+      background-color: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      min-height: 100vh;
+      overflow-x: clip;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .grain {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      pointer-events: none;
+      opacity: 0.5;
+      mix-blend-mode: soft-light;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 160px;
+    }
+
+    ::selection { background: var(--loden); color: var(--paper); }
+    :focus-visible { outline: 1px solid var(--loden); outline-offset: 3px; }
+
+    .page { max-width: 46rem; margin: 0 auto; padding: 4.5rem 1.75rem 3rem; }
+
+    .micro {
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .masthead-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 0.8rem;
+      margin-bottom: 4.5rem;
+      position: relative;
+    }
+
+    .masthead-row::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: var(--ink);
+      transform-origin: left center;
+      animation: draw 1.3s cubic-bezier(0.2, 0.7, 0.2, 1) 0.15s both;
+    }
+
+    @keyframes draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    .stamp {
+      color: var(--loden-soft);
+      border: 1px solid currentColor;
+      padding: 0.18rem 0.5rem 0.12rem;
+      transform: rotate(-1.5deg);
+    }
+
+    .identity {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 2.5rem;
+      margin-bottom: 3.6rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 3.4rem);
+      font-weight: 400;
+      letter-spacing: -0.015em;
+      line-height: 1.05;
+    }
+
+    .credential {
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.22em;
+      color: var(--ink-3);
+      vertical-align: 1.7em;
+      margin-left: 0.7em;
+    }
+
+    .tagline {
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--ink-2);
+      margin-top: 0.7rem;
+      max-width: 36rem;
+    }
+
+    .console {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem 1.8rem;
+      border-top: 1px solid var(--hairline-soft);
+      border-bottom: 1px solid var(--hairline-soft);
+      padding: 0.85rem 0;
+      margin-bottom: 2.9rem;
+    }
+
+    .channel-label {
+      display: block;
+      font-family: var(--mono);
+      font-size: 0.56rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .channel-value {
+      display: block;
+      font-size: 1rem;
+      color: var(--ink-2);
+      margin-top: 0.08rem;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.9rem;
+      border-bottom: 1px solid var(--hairline-soft);
+    }
+
+    .filter-btn {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+      text-decoration: none;
+      background: none;
+      border: none;
+      padding: 0 0 0.25rem;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.25s ease;
+    }
+
+    .filter-btn::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: var(--hairline);
+      transition: background-color 0.25s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active { color: var(--ink); }
+    .filter-btn:hover::after,
+    .filter-btn.active::after { background: var(--loden); }
+
+    .row {
+      display: grid;
+      grid-template-columns: 10rem 1fr;
+      gap: 2.5rem;
+      padding: 3.4rem 0 2.4rem;
+      border-bottom: 1px solid var(--hairline-soft);
+    }
+
+    .side { display: flex; align-items: baseline; gap: 0.8rem; }
+    .side-no { font-family: var(--mono); font-size: 0.6rem; color: var(--loden-soft); }
+    h2 {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .index-item { border-bottom: 1px solid var(--hairline-soft); }
+    .index-item:first-child .index-trigger { padding-top: 0.2rem; }
+    .index-trigger {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 0.95rem 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      text-align: left;
+    }
+
+    .index-no {
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      color: var(--loden-soft);
+      width: 1.2rem;
+      flex-shrink: 0;
+      font-style: italic;
+    }
+
+    .index-name { font-size: 1.12rem; color: var(--ink); transition: color 0.3s ease; }
+    .index-trigger:hover .index-name,
+    .index-trigger:active .index-name { color: var(--loden); }
+
+    .index-meta {
+      margin-left: auto;
+      font-family: var(--mono);
+      font-size: 0.56rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      white-space: nowrap;
+    }
+
+    .index-plus {
+      position: relative;
+      width: 11px;
+      height: 11px;
+      flex-shrink: 0;
+      margin-left: 0.4rem;
+      transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    .index-plus::before,
+    .index-plus::after {
+      content: '';
+      position: absolute;
+      background: var(--ink-3);
+      transition: background-color 0.3s ease;
+    }
+
+    .index-plus::before { width: 11px; height: 1px; top: 5px; left: 0; }
+    .index-plus::after { width: 1px; height: 11px; left: 5px; top: 0; }
+    .index-trigger:hover .index-plus::before,
+    .index-trigger:hover .index-plus::after { background: var(--loden); }
+    .index-trigger[aria-expanded="true"] .index-plus { transform: rotate(45deg); }
+
+    .index-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    .index-inner { overflow: hidden; min-height: 0; }
+    .index-trigger[aria-expanded="true"] + .index-content { grid-template-rows: 1fr; }
+    .index-trigger[aria-expanded="true"] + .index-content .index-inner { padding-bottom: 1.3rem; }
+
+    .prose {
+      font-size: 0.98rem;
+      line-height: 1.78;
+      color: var(--ink-2);
+      font-variant-numeric: oldstyle-nums;
+      padding-left: 2.1rem;
+      max-width: 58ch;
+    }
+
+    .tags, .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin: 0.7rem 0 0 2.1rem;
+    }
+
+    .tag, .index-link {
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .index-link {
+      display: inline-block;
+      color: var(--ink-2);
+      text-decoration: none;
+      border-bottom: 1px solid var(--hairline);
+      padding-bottom: 0.2rem;
+      transition: color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .index-link:hover { color: var(--loden); border-color: var(--loden); }
+    .empty { color: var(--ink-3); font-style: italic; padding: 1rem 0; }
+
+    footer {
+      margin-top: 2.2rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid var(--hairline-soft);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: baseline;
+    }
+
+    @media (max-width: 640px) {
+      html { font-size: 16px; }
+      .page { padding: 2.6rem 1.2rem 2rem; }
+      .masthead-row { margin-bottom: 3rem; }
+      .identity { display: block; margin-bottom: 2.5rem; }
+      .row { display: block; padding: 2.6rem 0 1.8rem; }
+      .side { margin-bottom: 1.3rem; }
+      .index-meta { display: none; }
+      footer { display: block; }
+    }
   </style>
 </head>
 <body>
-  <main>
-    <header>
-      <div>
-        <h1>Project Radar</h1>
-        <p>Public-safe tracker for prototypes, maintained apps, paused work, and archived projects.</p>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="page">
+    <header class="masthead">
+      <div class="masthead-row">
+        <span class="micro">Project ledger</span>
+        <span class="micro stamp">Public</span>
       </div>
-      <div class="meta" id="meta">Loading…</div>
+      <div class="identity">
+        <div>
+          <h1>Project Radar<span class="credential">ANOUAR.CA</span></h1>
+          <p class="tagline">A public index of prototypes, maintained apps, paused ideas, and archived experiments.</p>
+        </div>
+      </div>
     </header>
-    <div class="controls" id="controls"></div>
-    <section class="grid" id="projects"></section>
-  </main>
+
+    <section class="console" aria-label="Project totals">
+      <div class="channel">
+        <span class="channel-label">Updated</span>
+        <span class="channel-value" id="updated">Loading</span>
+      </div>
+      <div class="channel">
+        <span class="channel-label">Visible</span>
+        <span class="channel-value" id="visible-count">-</span>
+      </div>
+      <div class="channel">
+        <span class="channel-label">Total</span>
+        <span class="channel-value" id="total-count">-</span>
+      </div>
+    </section>
+
+    <nav class="filters" id="filters" aria-label="Project filters"></nav>
+
+    <main>
+      <section class="row">
+        <div class="side">
+          <span class="side-no">01</span>
+          <h2>Projects</h2>
+        </div>
+        <div id="projects"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span class="micro">radar.anouar.ca</span>
+      <span class="micro">names, status, one-liners</span>
+    </footer>
+  </div>
+
   <script>
-    let selected = "all";
     let state = null;
+    let selected = 'all';
 
     function esc(value) {
-      return String(value ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
+      return String(value ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
     }
 
     function statusLabel(id) {
       return state?.status_options?.find(s => s.id === id)?.label || id;
     }
 
-    function renderControls() {
-      const statuses = [
-        { id: "all", label: "All" },
-        ...(state?.status_options || [])
-      ];
-      const el = document.getElementById("controls");
-      el.innerHTML = statuses.map(s => `<button class="${s.id === selected ? "active" : ""}" data-status="${esc(s.id)}">${esc(s.label)}</button>`).join("");
-      el.querySelectorAll("button").forEach(button => {
-        button.addEventListener("click", () => { selected = button.dataset.status; render(); });
+    function dateLabel(value) {
+      if (!value) return 'Unknown';
+      return value;
+    }
+
+    function renderFilters() {
+      const statuses = [{ id: 'all', label: 'All' }, ...(state?.status_options || [])];
+      const filters = document.getElementById('filters');
+      filters.innerHTML = statuses.map(status => `
+        <button class="filter-btn ${selected === status.id ? 'active' : ''}" data-status="${esc(status.id)}">${esc(status.label)}</button>
+      `).join('');
+      filters.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', () => {
+          selected = button.dataset.status;
+          render();
+        });
+      });
+    }
+
+    function renderProjects() {
+      const all = state?.projects || [];
+      const projects = all.filter(project => selected === 'all' || project.status === selected);
+      document.getElementById('updated').textContent = state?.updated_at || 'Unknown';
+      document.getElementById('visible-count').textContent = projects.length;
+      document.getElementById('total-count').textContent = all.length;
+
+      const list = document.getElementById('projects');
+      if (!projects.length) {
+        list.innerHTML = '<p class="empty">No projects in this view.</p>';
+        return;
+      }
+
+      list.innerHTML = projects.map((project, index) => {
+        const open = index === 0 ? 'true' : 'false';
+        return `
+          <article class="index-item">
+            <button class="index-trigger" type="button" aria-expanded="${open}">
+              <span class="index-no">${String(index + 1).padStart(2, '0')}</span>
+              <span class="index-name">${esc(project.name)}</span>
+              <span class="index-meta">${esc(statusLabel(project.status))} · ${esc(dateLabel(project.last_touched))}</span>
+              <span class="index-plus" aria-hidden="true"></span>
+            </button>
+            <div class="index-content">
+              <div class="index-inner">
+                <p class="prose">${esc(project.summary)}</p>
+                ${(project.tags || []).length ? `<div class="tags">${project.tags.map(tag => `<span class="tag">${esc(tag)}</span>`).join('')}</div>` : ''}
+                ${(project.links || []).length ? `<div class="links">${project.links.map(link => `<a class="index-link" href="${esc(link.url)}" target="_blank" rel="noopener">${esc(link.label)} ↗</a>`).join('')}</div>` : ''}
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      list.querySelectorAll('.index-trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const expanded = trigger.getAttribute('aria-expanded') === 'true';
+          trigger.setAttribute('aria-expanded', String(!expanded));
+        });
       });
     }
 
     function render() {
-      renderControls();
-      const all = state?.projects || [];
-      const projects = all.filter(p => selected === "all" || p.status === selected);
-      document.getElementById("meta").innerHTML = `Updated ${esc(state?.updated_at || "unknown")}<br>${projects.length} visible / ${all.length} total`;
-      const grid = document.getElementById("projects");
-      if (!projects.length) {
-        grid.innerHTML = `<div class="empty">No projects in this view.</div>`;
-        return;
-      }
-      grid.innerHTML = projects.map(p => `
-        <article class="card">
-          <div class="top">
-            <h2>${esc(p.name)}</h2>
-            <span class="badge">${esc(statusLabel(p.status))}</span>
-          </div>
-          <p>${esc(p.summary)}</p>
-          <dl>
-            <div><dt>Last touched</dt><dd>${esc(p.last_touched)}</dd></div>
-            ${p.notes ? `<div><dt>Notes</dt><dd>${esc(p.notes)}</dd></div>` : ""}
-          </dl>
-          <div class="tags">${(p.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
-          <div class="links">${(p.links || []).map(l => `<a class="link" href="${esc(l.url)}" rel="noopener noreferrer">${esc(l.label)}</a>`).join("")}</div>
-        </article>
-      `).join("");
+      renderFilters();
+      renderProjects();
     }
 
-    fetch("projects.json", { cache: "no-store" })
-      .then(r => r.json())
+    fetch('projects.json', { cache: 'no-store' })
+      .then(response => response.json())
       .then(json => { state = json; render(); })
-      .catch(err => {
-        document.getElementById("meta").textContent = "Failed to load projects.json";
-        document.getElementById("projects").innerHTML = `<div class="empty">${esc(err.message)}</div>`;
+      .catch(error => {
+        document.getElementById('updated').textContent = 'Error';
+        document.getElementById('projects').innerHTML = `<p class="empty">${esc(error.message)}</p>`;
       });
   </script>
 </body>
