@@ -1,7 +1,12 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "updated_at": "2026-06-29",
   "status_options": [
+    {
+      "id": "building",
+      "label": "Building",
+      "description": "Actively being pushed forward as a product or serious project."
+    },
     {
       "id": "prototype",
       "label": "Prototype",
@@ -24,6 +29,7 @@
     }
   ],
   "tag_options": [
+    "ai",
     "app",
     "automation",
     "browser-extension",
@@ -31,13 +37,17 @@
     "consumer",
     "devtool",
     "finance",
+    "fork",
     "game",
+    "grc",
     "hardware",
     "internal-tool",
     "ios",
+    "macos",
     "personal-site",
     "product",
     "research",
+    "rss",
     "security",
     "utility",
     "writing"
@@ -55,11 +65,136 @@
       "summary": "Public-safe tracker for remembering prototypes, maintained apps, paused work, and archived projects.",
       "tags": ["internal-tool", "utility"],
       "links": [
-        {"label": "repo", "url": "https://github.com/Hankyone/project-radar"},
         {"label": "site", "url": "https://radar.anouar.ca"}
-      ],
-      "notes": "Repo and custom domain are set up. Seed list still needs approval."
+      ]
+    },
+    {
+      "id": "controls",
+      "name": "Controls",
+      "status": "building",
+      "last_touched": "2026-06-29",
+      "summary": "Control assessment platform for GRC work and the main commercial product push.",
+      "tags": ["product", "grc", "security"]
+    },
+    {
+      "id": "deadsimplerss",
+      "name": "deadsimpleRSS",
+      "status": "maintenance",
+      "last_touched": "2026-06-29",
+      "summary": "RSS reader app with a small user base, currently maintained with room for future features.",
+      "tags": ["app", "rss", "product"]
+    },
+    {
+      "id": "rapidrecap",
+      "name": "RapidRecap",
+      "status": "maintenance",
+      "last_touched": "2026-06-15",
+      "summary": "YouTube recap app with users, public sharing, guest usage, and ongoing maintenance.",
+      "tags": ["app", "ai", "product"]
+    },
+    {
+      "id": "too-many-projects-chromeext",
+      "name": "Too Many Projects Chrome Extension",
+      "status": "prototype",
+      "last_touched": "2026-06-29",
+      "summary": "Browser extension that finds local dev servers and lets you open them quickly.",
+      "tags": ["browser-extension", "devtool", "utility"]
+    },
+    {
+      "id": "extweets",
+      "name": "ExTweets",
+      "status": "prototype",
+      "last_touched": "2026-06-10",
+      "summary": "X-related agent/tooling project with account connection, usage controls, and metering experiments.",
+      "tags": ["app", "ai", "product"]
+    },
+    {
+      "id": "anouardotca",
+      "name": "Anouar.ca",
+      "status": "maintenance",
+      "last_touched": "2026-06-17",
+      "summary": "Personal website, currently maintained rather than treated as a standalone product.",
+      "tags": ["personal-site", "cloudflare"]
+    },
+    {
+      "id": "adobe-bug-bounty",
+      "name": "Adobe Bug Bounty",
+      "status": "paused",
+      "last_touched": "2026-05-31",
+      "summary": "Side project exploring AI-assisted vulnerability research against an external bug bounty target.",
+      "tags": ["security", "ai", "research"]
+    },
+    {
+      "id": "newgame",
+      "name": "NewGame",
+      "status": "prototype",
+      "last_touched": "2026-06-28",
+      "summary": "Experiment with different self-contained web game concepts.",
+      "tags": ["game", "prototype", "consumer"]
+    },
+    {
+      "id": "neartalk",
+      "name": "NearTalk",
+      "status": "prototype",
+      "last_touched": "2026-06-28",
+      "summary": "Experimental project around nearby conversation capture or translation concepts.",
+      "tags": ["ai", "app", "prototype"]
+    },
+    {
+      "id": "spiky-intelligence",
+      "name": "Spiky Intelligence",
+      "status": "prototype",
+      "last_touched": "2026-06-25",
+      "summary": "Concept experiment for visualizing uneven or jagged AI capability improvements.",
+      "tags": ["ai", "research", "visualization"]
+    },
+    {
+      "id": "layoff-dividend-simulator",
+      "name": "Layoff Dividend Simulator",
+      "status": "prototype",
+      "last_touched": "2026-06-25",
+      "summary": "Concept simulator for experimenting with layoff, payroll, and retention dividend ideas.",
+      "tags": ["finance", "research", "prototype"]
+    },
+    {
+      "id": "capital-flow-tool",
+      "name": "Capital Flow Tool",
+      "status": "prototype",
+      "last_touched": "2026-06-25",
+      "summary": "Capital flow dashboard concept for exploring market or investment movement ideas.",
+      "tags": ["finance", "research", "visualization"]
+    },
+    {
+      "id": "macdown-pro-plus-ultra",
+      "name": "MacDown Pro Plus Ultra",
+      "status": "prototype",
+      "last_touched": "2026-05-17",
+      "summary": "Personal fork of MacDown with custom app behavior, release handling, and utility improvements.",
+      "tags": ["macos", "fork", "utility"]
+    },
+    {
+      "id": "ghostty-pro-plus-ultra",
+      "name": "Ghostty Pro Plus Ultra",
+      "status": "prototype",
+      "last_touched": "2026-06-28",
+      "summary": "Personal fork/customization track for Ghostty-style terminal workflow improvements.",
+      "tags": ["macos", "fork", "utility"]
+    },
+    {
+      "id": "maccy",
+      "name": "Maccy Fork",
+      "status": "prototype",
+      "last_touched": "2026-06-29",
+      "summary": "Personal fork/customization track for a clipboard manager.",
+      "tags": ["macos", "fork", "utility"]
+    },
+    {
+      "id": "bleunlock-pro-plus-ultra",
+      "name": "BLEUnlock Pro Plus Ultra",
+      "status": "prototype",
+      "last_touched": "2026-04-30",
+      "summary": "Personal fork/customization track for BLE-based unlock or display wake behavior.",
+      "tags": ["macos", "fork", "utility"]
     }
-  ],
-  "candidate_repos": []
+  ]
 }
