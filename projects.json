@@ -469,6 +469,14 @@
       "last_touched": "2026-05-16",
       "summary": "Local playground for OpenAI realtime voice experiments with talk, act, and whisper modes.",
       "tags": ["ai", "voice", "app"]
+    },
+    {
+      "id": "cloudflare-pastebin",
+      "name": "ShadeSec Pastebin",
+      "status": "maintenance",
+      "last_touched": "2026-05-10",
+      "summary": "Worker-based pastebin for paste.shadesec.com with password protection and file uploads.",
+      "tags": ["cloudflare", "utility", "security"]
     }
   ]
 }
