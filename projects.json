@@ -88,7 +88,7 @@
       "name": "Canary Grid",
       "status": "building",
       "last_touched": "2026-06-29",
-      "summary": "Canary-token grid for testing AI infrastructure layers, including inference providers, routers, agents, and AI apps.",
+      "summary": "Platform that injects canary tokens across AI routing and inference layers and attributes leakage to the providers and routers that handled the data.",
       "tags": ["security", "ai", "canary", "infrastructure"]
     },
     {
