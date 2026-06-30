@@ -113,7 +113,10 @@
       "status": "building",
       "last_touched": "2026-06-29",
       "summary": "YouTube summarization tool that uses video understanding and creates short clips from the content.",
-      "tags": ["app", "ai", "video", "product"]
+      "tags": ["app", "ai", "video", "product"],
+      "links": [
+        {"label": "site", "url": "https://rapidrecap.app"}
+      ]
     },
     {
       "id": "too-many-projects-chromeext",
