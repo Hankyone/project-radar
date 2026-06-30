@@ -477,6 +477,14 @@
       "last_touched": "2026-05-10",
       "summary": "Worker-based pastebin for paste.shadesec.com with password protection and file uploads.",
       "tags": ["cloudflare", "utility", "security"]
+    },
+    {
+      "id": "too-many-projects",
+      "name": "TooManyProjects",
+      "status": "maintenance",
+      "last_touched": "2026-06-12",
+      "summary": "Local web dashboard to understand and manage all the project folders on your disk: git state, GitHub sync, disk usage, recent activity.",
+      "tags": ["devtool", "utility", "app"]
     }
   ]
 }
