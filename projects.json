@@ -445,6 +445,30 @@
       "last_touched": "2025-06-08",
       "summary": "CISSP exam study app with swipeable flashcard review.",
       "tags": ["ios", "app", "security"]
+    },
+    {
+      "id": "just-be-a-quitter",
+      "name": "Just Be a Quitter",
+      "status": "maintenance",
+      "last_touched": "2026-04-22",
+      "summary": "macOS utility that quits selected apps when their last window closes.",
+      "tags": ["macos", "utility", "app"]
+    },
+    {
+      "id": "dual-profile-lab",
+      "name": "Dual Profile Lab",
+      "status": "prototype",
+      "last_touched": "2026-04-21",
+      "summary": "Dating experiment that creates two AI-rendered gender-coded presentations from one source profile.",
+      "tags": ["ai", "app", "consumer"]
+    },
+    {
+      "id": "realtime-lab",
+      "name": "Realtime Lab",
+      "status": "prototype",
+      "last_touched": "2026-05-16",
+      "summary": "Local playground for OpenAI realtime voice experiments with talk, act, and whisper modes.",
+      "tags": ["ai", "voice", "app"]
     }
   ]
 }
