@@ -485,6 +485,14 @@
       "last_touched": "2026-06-12",
       "summary": "Local web dashboard to understand and manage all the project folders on your disk: git state, GitHub sync, disk usage, recent activity.",
       "tags": ["devtool", "utility", "app"]
+    },
+    {
+      "id": "luma-rss",
+      "name": "Luma RSS",
+      "status": "maintenance",
+      "last_touched": "2026-06-26",
+      "summary": "Cloudflare Worker that converts Luma calendars into RSS feeds, deployed at luma.anouar.ca.",
+      "tags": ["cloudflare", "rss", "app"]
     }
   ]
 }
