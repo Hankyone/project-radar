@@ -491,7 +491,7 @@
       "name": "Luma RSS",
       "status": "maintenance",
       "last_touched": "2026-06-26",
-      "summary": "Cloudflare Worker that converts Luma calendars into RSS feeds, deployed at luma.anouar.ca.",
+      "summary": "Cloudflare Worker that converts Luma calendars into RSS feeds.",
       "tags": ["cloudflare", "rss", "app"]
     }
   ]
