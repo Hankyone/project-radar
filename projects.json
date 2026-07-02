@@ -493,6 +493,26 @@
       "last_touched": "2026-06-26",
       "summary": "Cloudflare Worker that converts Luma calendars into RSS feeds.",
       "tags": ["cloudflare", "rss", "app"]
+    },
+    {
+      "id": "floorplan-magic",
+      "name": "FloorPlanMagic",
+      "status": "prototype",
+      "last_touched": "2026-01-25",
+      "summary": "Multi-experiment renovation scope platform: AI floor plan analysis, scope question parsing, and price list matching.",
+      "tags": ["app", "ai", "product"],
+      "links": [
+        {"label": "site", "url": "https://floorplan.anouar.ca"},
+        {"label": "github", "url": "https://github.com/Hankyone/FloorPlanMagic"}
+      ]
+    },
+    {
+      "id": "scoping-estimation-tool",
+      "name": "Scoping Estimation Tool",
+      "status": "prototype",
+      "last_touched": "2026-01-02",
+      "summary": "Spec for a renovation scope compiler that turns expert decision rules into generated work items, quantities, and pricing from a master catalog.",
+      "tags": ["app", "product"]
     }
   ]
 }

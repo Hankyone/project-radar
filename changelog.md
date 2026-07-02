@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-01
+
+- Added FloorPlanMagic (renovation scope platform, deployed at floorplan.anouar.ca).
+- Added Scoping Estimation Tool (renovation scope compiler spec).
+- Removed URL from Luma RSS description.
+
 ## 2026-06-29
 
 - Created public `project-radar` repository.
