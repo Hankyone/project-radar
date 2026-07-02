@@ -513,6 +513,17 @@
       "last_touched": "2026-01-02",
       "summary": "Spec for a renovation scope compiler that turns expert decision rules into generated work items, quantities, and pricing from a master catalog.",
       "tags": ["app", "product"]
+    },
+    {
+      "id": "shadesec-cip",
+      "name": "ShadeSec CIP",
+      "status": "building",
+      "last_touched": "2026-07-01",
+      "summary": "Cyber intelligence platform that monitors competitor websites, release notes, pricing, and community chatter to surface source-backed market signals for the security industry.",
+      "tags": ["security", "ai", "product"],
+      "links": [
+        {"label": "github", "url": "https://github.com/Hankyone/ShadeSec-CIP"}
+      ]
     }
   ]
 }

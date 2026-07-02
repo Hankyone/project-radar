@@ -4,6 +4,7 @@
 
 - Added FloorPlanMagic (renovation scope platform, deployed at floorplan.anouar.ca).
 - Added Scoping Estimation Tool (renovation scope compiler spec).
+- Added ShadeSec CIP (cyber intelligence platform for security industry market signals).
 - Removed URL from Luma RSS description.
 
 ## 2026-06-29
