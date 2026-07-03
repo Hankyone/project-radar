@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-03
+
+- Renamed NearTalk to Hearabouts and updated its `last_touched` date to reflect recent development.
+- Rolled back OptimalEats `last_touched` to `2026-06-01`; the July GitHub activity was not meaningful project work.
+
 ## 2026-07-02
 
 - Synced `last_touched` dates from GitHub activity: Project Radar, Control+s, Canary Grid, deadsimpleRSS, and OptimalEats.
