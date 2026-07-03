@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-07-02",
+  "updated_at": "2026-07-03",
   "status_options": [
     {"id": "building", "label": "Building", "description": "Actively being pushed forward as a product or serious project."},
     {"id": "prototype", "label": "Prototype", "description": "Built or being explored, not necessarily live or maintained."},
@@ -23,7 +23,7 @@
     {"id": "maccy-pro-plus-ultra", "name": "Maccy Pro Plus Ultra", "status": "maintenance", "last_touched": "2026-06-29", "summary": "Maccy fork with macOS 27 compatibility fixes and improved scroll, hover, and image preview.", "tags": ["macos", "utility", "app"]},
     {"id": "ghostty-pro-plus-ultra", "name": "Ghostty Pro Plus Ultra", "status": "maintenance", "last_touched": "2026-06-28", "summary": "Ghostty fork with a project-grouped sidebar, AI agent integration, and macOS quality-of-life improvements.", "tags": ["macos", "utility", "app"]},
     {"id": "newgame", "name": "NewGame", "status": "prototype", "last_touched": "2026-06-28", "summary": "Suite of ten daily cipher puzzle games, each hiding a message a different way.", "tags": ["game", "consumer"]},
-    {"id": "neartalk", "name": "NearTalk", "status": "prototype", "last_touched": "2026-06-28", "summary": "Proximity-based voice chat iOS app using Multipeer Connectivity for nearby discovery.", "tags": ["ai", "app", "voice"]},
+    {"id": "neartalk", "name": "Hearabouts", "status": "prototype", "last_touched": "2026-07-03", "summary": "Proximity-based voice chat iOS app using Multipeer Connectivity for nearby discovery.", "tags": ["ai", "app", "voice"]},
     {"id": "capital-flow-tool", "name": "Capital Flow Tool", "status": "prototype", "last_touched": "2026-06-25", "summary": "Self-updating local dashboard that maps where capital is leaning across asset buckets, with a directional flow-intensity model.", "tags": ["finance", "research", "visualization"]},
     {"id": "spiky-intelligence", "name": "Spiky Intelligence", "status": "archived", "last_touched": "2026-06-25", "summary": "Jagged AI capability visualization concept.", "tags": ["ai", "research", "visualization"]},
     {"id": "layoff-dividend-simulator", "name": "Layoff Dividend Simulator", "status": "archived", "last_touched": "2026-06-25", "summary": "Layoff and retention dividend simulator.", "tags": ["finance", "research"]},
@@ -48,7 +48,7 @@
     {"id": "visiondj", "name": "VisionDJ", "status": "building", "last_touched": "2026-06-11", "summary": "Vision-driven generative music using YOLO11 tracking and Magenta RealTime 2, fully local.", "tags": ["ai", "app", "hardware", "product"]},
     {"id": "mech-interp-lab", "name": "Mech-Interp-Lab", "status": "prototype", "last_touched": "2026-06-23", "summary": "Mechanistic interpretability lab with backend and frontend.", "tags": ["ai", "research"]},
     {"id": "shadesec-skillcheck", "name": "ShadeSec SkillCheck", "status": "prototype", "last_touched": "2026-06-23", "summary": "Security tool for reviewing AI skills installed with AI agents and understanding the risk around them.", "tags": ["security", "ai", "devtool"]},
-    {"id": "optimal-eats", "name": "OptimalEats", "status": "prototype", "last_touched": "2026-07-01", "summary": "App that optimizes the best food order around a price you set.", "tags": ["app", "consumer", "finance"]},
+    {"id": "optimal-eats", "name": "OptimalEats", "status": "prototype", "last_touched": "2026-06-01", "summary": "App that optimizes the best food order around a price you set.", "tags": ["app", "consumer", "finance"]},
     {"id": "blurred-pro-plus-ultra", "name": "Blurred Pro Plus Ultra", "status": "maintenance", "last_touched": "2026-04-03", "summary": "macOS distraction-dimming utility, forked and improved for my workflow.", "tags": ["macos", "utility", "app"]},
     {"id": "emg-myoware", "name": "EMG-MyoWare Experiments", "status": "archived", "last_touched": "2026-02-10", "summary": "EMG BLE receiver and live-plotting experiments with MyoWare sensors.", "tags": ["hardware", "research"]},
     {"id": "whats-in-the-background", "name": "WhatsInTheBackground", "status": "maintenance", "last_touched": "2026-01-20", "summary": "Native macOS app showing processes listening on network ports, with kill capability.", "tags": ["macos", "utility", "app"]},
