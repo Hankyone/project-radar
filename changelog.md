@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-02
+
+- Synced `last_touched` dates from GitHub activity: Project Radar, Control+s, Canary Grid, deadsimpleRSS, and OptimalEats.
+- Left project summaries, statuses, tags, and links unchanged.
+
 ## 2026-07-01
 
 - Added FloorPlanMagic (renovation scope platform, deployed at floorplan.anouar.ca).
