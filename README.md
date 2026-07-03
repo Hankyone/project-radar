@@ -9,7 +9,7 @@ This repo is meant to be updated from a pinned ChatGPT thread. The page reads `p
 - `index.html`, static single-page tracker
 - `projects.json`, project state
 - `changelog.md`, dated change history
-- `CNAME`, custom domain for `radar.anouar.ca`
+- `CNAME`, custom domain for `projects.anouar.ca`
 - `.nojekyll`, keeps GitHub Pages simple
 
 ## Scope
@@ -27,7 +27,7 @@ Each project entry should be limited to:
 - blocker, only when safe to share
 - links, only when intentionally shared
 
-Sensitive project work can still be represented by a sanitized project name and generic one-liner. Private repository contents, client material, pentest details, credentials, targets, and internal notes stay out of this repo.
+Sensitive project work can still be represented by a sanitized project name and generic one-liner. Keep private details and internal notes out of this repo.
 
 ## Update model
 
@@ -40,7 +40,7 @@ Sensitive project work can still be represented by a sanitized project name and 
 
 This repo is configured for the custom domain:
 
-`https://radar.anouar.ca/`
+`https://projects.anouar.ca/`
 
 Pages source:
 
