@@ -2,6 +2,7 @@
 
 ## 2026-07-03
 
+- Corrected Project Radar domain references to `projects.anouar.ca`.
 - Renamed NearTalk to Hearabouts and updated its `last_touched` date to reflect recent development.
 - Rolled back OptimalEats `last_touched` to `2026-06-01`; the July GitHub activity was not meaningful project work.
 
@@ -23,7 +24,7 @@
 - Expanded README with update model and public-safety rules.
 - Reset `projects.json` to a minimal approved state before repository-based seeding.
 - Started GitHub activity discovery for candidate project entries.
-- Added `CNAME` for `radar.anouar.ca`.
+- Added `CNAME` for `projects.anouar.ca`.
 - Added `.nojekyll` and a minimal static dashboard page.
 - Simplified schema to lifecycle status, last touched date, one-line summary, tags, and optional public links.
 - Seeded the first approved public project list from user classification.
