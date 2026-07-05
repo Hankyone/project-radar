@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-04
+
+- Synced `last_touched` dates from newer meaningful GitHub activity: Control+s and deadsimpleRSS.
+- Left project summaries, statuses, tags, and links unchanged.
+
 ## 2026-07-03
 
 - Synced `last_touched` dates from newer meaningful GitHub activity: Project Radar, Control+s, RX1 Stack, RapidRecap, Too Many Projects Chrome Extension, Ghostty Pro Plus Ultra, ExTweets, Fusion Compliance Engine, Mech-Interp-Lab, and Maccy Pro Plus Ultra.
