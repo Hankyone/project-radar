@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-05
+
+- Synced `last_touched` dates from newer meaningful GitHub activity: Project Radar, Canary Grid, RX1 Stack, Hearabouts, and Fusion Compliance Engine.
+- Left project summaries, statuses, tags, and links unchanged.
+
 ## 2026-07-04
 
 - Synced `last_touched` dates from newer meaningful GitHub activity: Control+s and deadsimpleRSS.
