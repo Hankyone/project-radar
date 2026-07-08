@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-08
+
+- Synced `last_touched` dates from newer meaningful GitHub activity: Control+s, Ghostty Pro Plus Ultra, and Hearabouts.
+- Left project summaries, statuses, tags, and links unchanged.
+- Ignored Project Radar repository edits as evidence for other project activity.
+
 ## 2026-07-07
 
 - Synced `last_touched` dates from newer meaningful GitHub activity: deadsimpleRSS, Ghostty Pro Plus Ultra, and Hearabouts.
