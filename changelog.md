@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-16
+
+- Added PDF Corpus Redaction after confirming `Hankyone/PDF-Corpus-Redaction`.
+- Set status to building and `last_touched` to `2026-07-16` from current repo activity.
+
 ## 2026-07-14
 
 - Synced `last_touched` from newer meaningful GitHub activity: Control+s.
