@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "status_options": [
     {"id": "building", "label": "Building", "description": "Actively being pushed forward as a product or serious project."},
     {"id": "prototype", "label": "Prototype", "description": "Built or being explored, not necessarily live or maintained."},
@@ -14,7 +14,7 @@
   },
   "projects": [
     {"id": "project-radar", "name": "Project Radar", "status": "maintenance", "last_touched": "2026-07-05", "summary": "This site.", "tags": ["internal-tool", "utility"], "links": [{"label": "site", "url": "https://projects.anouar.ca"}]},
-    {"id": "controls", "name": "Control+s", "status": "building", "last_touched": "2026-07-14", "summary": "Control assessment platform for GRC work.", "tags": ["product", "grc", "security"]},
+    {"id": "controls", "name": "Control+s", "status": "building", "last_touched": "2026-07-17", "summary": "Control assessment platform for GRC work.", "tags": ["product", "grc", "security"]},
     {"id": "canary-grid", "name": "Canary Grid", "status": "building", "last_touched": "2026-07-05", "summary": "Platform that injects canary tokens across AI routing and inference layers and attributes leakage to the providers and routers that handled the data.", "tags": ["security", "ai", "canary", "infrastructure"]},
     {"id": "rx1stack", "name": "RX1 Stack", "status": "building", "last_touched": "2026-07-05", "summary": "Custom-built robotics control stack for the RX1 robot.", "tags": ["robotics", "hardware", "software"]},
     {"id": "deadsimplerss", "name": "deadsimpleRSS", "status": "building", "last_touched": "2026-07-10", "summary": "Dead-simple RSS feed reader.", "tags": ["app", "rss", "product"]},
