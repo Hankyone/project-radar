@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
   "status_options": [
     {"id": "building", "label": "Building", "description": "Actively being pushed forward as a product or serious project."},
     {"id": "prototype", "label": "Prototype", "description": "Built or being explored, not necessarily live or maintained."},
@@ -14,12 +14,12 @@
   },
   "projects": [
     {"id": "project-radar", "name": "Project Radar", "status": "maintenance", "last_touched": "2026-07-05", "summary": "This site.", "tags": ["internal-tool", "utility"], "links": [{"label": "site", "url": "https://projects.anouar.ca"}]},
-    {"id": "controls", "name": "Control+s", "status": "building", "last_touched": "2026-07-17", "summary": "Control assessment platform for GRC work.", "tags": ["product", "grc", "security"]},
+    {"id": "controls", "name": "Control+s", "status": "building", "last_touched": "2026-07-18", "summary": "Control assessment platform for GRC work.", "tags": ["product", "grc", "security"]},
     {"id": "canary-grid", "name": "Canary Grid", "status": "building", "last_touched": "2026-07-05", "summary": "Platform that injects canary tokens across AI routing and inference layers and attributes leakage to the providers and routers that handled the data.", "tags": ["security", "ai", "canary", "infrastructure"]},
     {"id": "rx1stack", "name": "RX1 Stack", "status": "building", "last_touched": "2026-07-05", "summary": "Custom-built robotics control stack for the RX1 robot.", "tags": ["robotics", "hardware", "software"]},
     {"id": "deadsimplerss", "name": "deadsimpleRSS", "status": "building", "last_touched": "2026-07-10", "summary": "Dead-simple RSS feed reader.", "tags": ["app", "rss", "product"]},
-    {"id": "rapidrecap", "name": "RapidRecap", "status": "building", "last_touched": "2026-07-13", "summary": "YouTube summarization tool that uses video understanding and creates short clips from the content.", "tags": ["app", "ai", "video", "product"], "links": [{"label": "site", "url": "https://rapidrecap.app"}]},
-    {"id": "pdf-corpus-redaction", "name": "PDF Corpus Redaction", "status": "building", "last_touched": "2026-07-16", "summary": "AI-driven true PDF redaction for pharma market-access workflows.", "tags": ["ai", "automation", "security", "product"], "links": [{"label": "github", "url": "https://github.com/Hankyone/PDF-Corpus-Redaction"}]},
+    {"id": "rapidrecap", "name": "RapidRecap", "status": "building", "last_touched": "2026-07-18", "summary": "YouTube summarization tool that uses video understanding and creates short clips from the content.", "tags": ["app", "ai", "video", "product"], "links": [{"label": "site", "url": "https://rapidrecap.app"}]},
+    {"id": "pdf-corpus-redaction", "name": "PDF Corpus Redaction", "status": "building", "last_touched": "2026-07-18", "summary": "AI-driven true PDF redaction for pharma market-access workflows.", "tags": ["ai", "automation", "security", "product"], "links": [{"label": "github", "url": "https://github.com/Hankyone/PDF-Corpus-Redaction"}]},
     {"id": "too-many-projects-chromeext", "name": "Too Many Projects Chrome Extension", "status": "prototype", "last_touched": "2026-07-03", "summary": "Browser extension for discovering local dev servers and opening them quickly.", "tags": ["browser-extension", "devtool", "utility"]},
     {"id": "maccy-pro-plus-ultra", "name": "Maccy Pro Plus Ultra", "status": "maintenance", "last_touched": "2026-07-07", "summary": "Maccy fork with macOS 27 compatibility fixes and improved scroll, hover, and image preview.", "tags": ["macos", "utility", "app"]},
     {"id": "ghostty-pro-plus-ultra", "name": "Ghostty Pro Plus Ultra", "status": "maintenance", "last_touched": "2026-07-13", "summary": "Ghostty fork with a project-grouped sidebar, AI agent integration, and macOS quality-of-life improvements.", "tags": ["macos", "utility", "app"]},
@@ -32,7 +32,7 @@
     {"id": "adobe-bug-bounty", "name": "Adobe Bug Bounty", "status": "paused", "last_touched": "2026-05-31", "summary": "AI-assisted bug bounty research project.", "tags": ["security", "ai", "research"]},
     {"id": "macdown-pro-plus-ultra", "name": "MacDown Pro Plus Ultra", "status": "maintenance", "last_touched": "2026-05-17", "summary": "MacDown fork with Apple Silicon helper path fixes, a branded crown icon, and a custom update channel.", "tags": ["macos", "utility", "app"]},
     {"id": "bleunlock-pro-plus-ultra", "name": "BLEUnlock Pro Plus Ultra", "status": "maintenance", "last_touched": "2026-04-30", "summary": "Menu bar utility that locks and unlocks your Mac by BLE device proximity, with battery-aware improvements.", "tags": ["macos", "utility", "app"]},
-    {"id": "anouardotca", "name": "Anouar.ca", "status": "maintenance", "last_touched": "2026-07-13", "summary": "Personal website.", "tags": ["personal-site", "cloudflare"]},
+    {"id": "anouardotca", "name": "Anouar.ca", "status": "maintenance", "last_touched": "2026-07-18", "summary": "Personal website.", "tags": ["personal-site", "cloudflare"]},
     {"id": "rapidscope", "name": "RapidScope", "status": "maintenance", "last_touched": "2025-05-25", "summary": "Client-facing pentest request portal for submitting engagement scope and scheduling.", "tags": ["app", "security", "product"]},
     {"id": "wifi-boost", "name": "Wi-Fi Boost", "status": "maintenance", "last_touched": "unknown", "summary": "macOS menu bar app that reduces Wi-Fi latency by disabling AWDL.", "tags": ["utility", "wifi"]},
     {"id": "windowvision", "name": "WindowVision", "status": "archived", "last_touched": "unknown", "summary": "Video-based window extraction prototype for window-covering workflows, powered by Gemini.", "tags": ["app", "ai"]},
