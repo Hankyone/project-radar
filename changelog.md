@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-18
+
+- Synced `last_touched` from newer meaningful GitHub activity: Control+s, RapidRecap, PDF Corpus Redaction, and Anouar.ca.
+- Found no new clearly intentional Hankyone projects missing from `projects.json`.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Ignored upstream-only Ghostty merges and Project Radar repository edits as evidence for project activity.
+
 ## 2026-07-17
 
 - Synced `last_touched` from newer meaningful GitHub activity: Control+s.
