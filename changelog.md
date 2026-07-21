@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-20
+
+- Synced `last_touched` from newer meaningful GitHub activity: Control+s, deadsimpleRSS, RapidRecap, and PDF Corpus Redaction.
+- Added FrancePlan after confirming the wedding planning app and its initial implementation.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Ignored generated files, repository housekeeping, Project Radar edits, and RX1-Robot activity already covered by RX1 Stack's current date.
+
 ## 2026-07-18
 
 - Synced `last_touched` from newer meaningful GitHub activity: Control+s, RapidRecap, PDF Corpus Redaction, and Anouar.ca.
