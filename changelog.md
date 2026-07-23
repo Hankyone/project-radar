@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-23
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS.
+- Added OpenOutposts after confirming the active coding-agent control plane and outpost execution architecture.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Ignored generated files, repository housekeeping, upstream-only activity, and Project Radar edits.
+
 ## 2026-07-21
 
 - Synced `last_touched` from newer meaningful GitHub activity: RapidRecap and PDF Corpus Redaction.
