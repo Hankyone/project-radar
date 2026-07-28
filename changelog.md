@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-28
+
+- Synced `last_touched` from newer meaningful GitHub activity: OpenOutposts.
+- Found no new clearly intentional Hankyone projects missing from `projects.json`.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Ignored RapidRecap SEO/search maintenance, the deadsimpleRSS promo workspace, automated harness maintenance, generated files, dependency-only changes, repository housekeeping, and Project Radar edits.
+
 ## 2026-07-27
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS, RapidRecap, BLEUnlock Pro Plus Ultra, and Anouar.ca.
