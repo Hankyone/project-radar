@@ -2,7 +2,8 @@
 
 ## 2026-07-27
 
-- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS, RapidRecap, ExTweets, BLEUnlock Pro Plus Ultra, Anouar.ca, and Fusion Compliance Engine.
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS, RapidRecap, BLEUnlock Pro Plus Ultra, and Anouar.ca.
+- Corrected false-positive updates: restored ExTweets to `2026-07-03` because its July 20 SEO/legal-page maintenance commit was not intentional project work, and restored Fusion Compliance Engine to `2026-07-05` because its mapped repository has no newer meaningful commit.
 - Found no new clearly intentional Hankyone projects missing from `projects.json`.
 - Left existing project summaries, statuses, tags, and links unchanged.
 - Ignored generated files, dependency-only changes, repository housekeeping, upstream-only activity, and Project Radar edits.
