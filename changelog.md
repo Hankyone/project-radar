@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-30
+
+- Synced `last_touched` from newer meaningful GitHub activity: RapidRecap and OpenOutposts.
+- Found no new clearly intentional Hankyone projects missing from `projects.json`.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Ignored upstream-only Ghostty activity, repository housekeeping, generated files, and Project Radar edits.
+
 ## 2026-07-28
 
 - Synced `last_touched` from newer meaningful GitHub activity: OpenOutposts.
