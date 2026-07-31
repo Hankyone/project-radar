@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-07-31
+
+- Synced `last_touched` from newer meaningful GitHub activity: Ghostty Pro Plus Ultra and OpenOutposts.
+- Ghostty evidence: transcript-derived agent state and tool-status work, latest commit `14b054cfdd82c562439f61a3c5030564fd9b4551`.
+- OpenOutposts evidence: runner-to-Homestead architecture rename across protocol, services, storage, infrastructure, docs, and UI, commit `e13d2b8701053406e754c86c0d45f043732a8c07`.
+- Found no new clearly intentional Hankyone projects missing from `projects.json`.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Ignored upstream merges, automated `background-agents` activity, Obsyone vault-sync commits, repository housekeeping, and Project Radar edits.
+
 ## 2026-07-30
 
 - Synced `last_touched` from newer meaningful GitHub activity: RapidRecap and OpenOutposts.
