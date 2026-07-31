@@ -2,6 +2,7 @@
 
 ## 2026-07-31
 
+- Removed FrancePlan from tracked projects at user request.
 - Synced `last_touched` from newer meaningful GitHub activity: Ghostty Pro Plus Ultra and OpenOutposts.
 - Ghostty evidence: transcript-derived agent state and tool-status work, latest commit `14b054cfdd82c562439f61a3c5030564fd9b4551`.
 - OpenOutposts evidence: runner-to-Homestead architecture rename across protocol, services, storage, infrastructure, docs, and UI, commit `e13d2b8701053406e754c86c0d45f043732a8c07`.
@@ -190,5 +191,5 @@
 - Merged `quorum-backtester` into the new `quorum` entry (backtester is a component of the broader Quorum platform).
 - Updated 20 project descriptions against source code: NearTalk, Capital Flow Tool, NewGame, Maccy PPU, Ghostty PPU, MacDown PPU, BLEUnlock PPU, RapidScope, Wi-Fi Boost, WindowVision, slop2prod, Waitless/NoHoldBot, ShadowAI Monitor, PRHub, OpenMicForm, DroneTO-311, SimpleDocket, Realtime Voice Agent.
 - Removed "public" framing from the page, README, and projects.json; the tracker is for personal use.
-- On mobile, filters now scroll horizontally on one line instead of wrapping, and the expand-all button sits in the same row.
+- On mobile, filters now scroll horizontally on one line instead of wrapping, and the expand-all button sits in the same filter row.
 - On mobile, the footer now stacks vertically instead of merging text.
