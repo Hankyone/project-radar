@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-08-01
+
+- Synced `last_touched` from newer meaningful GitHub activity: Control+s, RapidRecap, Ghostty Pro Plus Ultra, and OpenOutposts.
+- Control+s evidence: restored model reasoning metadata and effort handling for Flue, commit `4ed86a2a677542c8666b9f13be3aeecb71854aee`.
+- RapidRecap evidence: moved MCP recap creation onto the site’s shared recap and credit-spending services, commit `76e87079b495f10b651704cd9075d48f81191cd3`.
+- Ghostty evidence: keeper redraw, quit behavior, and release-signing fixes, latest meaningful commit `85728bc2aaa4788b3471c5afc9923e6154c0c6e8`.
+- OpenOutposts evidence: persistent agent transcripts, bounded session records, actual session deletion, signed worker self-updates, and model-effort validation, latest commit `14a1ffdeddfd283d02be4edf469d64d4a12a8581`.
+- Added Disconnected Browser after confirming its working custom-tab Chrome extension and live-component recipe model, repository commit `08ab3546a42b4b04e981865587433b6d590c2955`.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Ignored upstream Ghostty commits, generated files, dependency-only changes, repository housekeeping, automated `background-agents` activity, and Project Radar edits.
+
 ## 2026-07-31
 
 - Removed FrancePlan from tracked projects at user request.
