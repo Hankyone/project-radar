@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-02
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-07-26` → `2026-08-01`).
+- Evidence: filter-suggestion prompt redesign and measured model-routing changes, latest meaningful commit `9951907331f51e9c49a5fb6846bf866179af03b4`.
+- Found no new clearly intentional Hankyone projects missing from `projects.json`.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Ignored Sentry/build plumbing, repository housekeeping, upstream-only activity, automated `background-agents` activity, and Project Radar edits.
+
 ## 2026-08-01
 
 - Synced `last_touched` from newer meaningful GitHub activity: Control+s, RapidRecap, Ghostty Pro Plus Ultra, and OpenOutposts.
