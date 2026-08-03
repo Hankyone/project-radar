@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-03
+
+- Added ListenToMe after confirming the native macOS dictation app, documented GPT Live Transcribe workflow, and initial release commit `3a25feaa79109715833167516300d086f7623c0e`.
+- Found no newer meaningful activity for existing tracked projects beyond their current `last_touched` dates.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Ignored Sentry/build plumbing, repository housekeeping, upstream-only activity, automated `background-agents` activity, and Project Radar edits.
+
 ## 2026-08-02
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-07-26` → `2026-08-01`).
