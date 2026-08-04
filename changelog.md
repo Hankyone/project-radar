@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-04
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-01` → `2026-08-03`).
+- Evidence: fixed verified feed ingestion and alternate-feed discovery, commit `3813aa2715eb5c8d6aef150ad39078519b6c20ed`.
+- Ignored the duplicate-subscription merge because it was reverted, plus dependency-only changes, generated files, repository housekeeping, upstream merges, SEO/legal maintenance, automated background-agent work, and Project Radar edits.
+- Found no new clearly intentional Hankyone projects missing from `projects.json`.
+- Left existing project summaries, statuses, tags, and links unchanged.
+
 ## 2026-08-03
 
 - Added ListenToMe after confirming the native macOS dictation app, documented GPT Live Transcribe workflow, and initial release commit `3a25feaa79109715833167516300d086f7623c0e`.
