@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-08-05
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-03` → `2026-08-04`) and OpenOutposts (`2026-08-01` → `2026-08-04`).
+- deadsimpleRSS evidence: authentication recovery, dormancy reconciliation, and verified-feed migration work, latest commit `b887edda2f027c4aa45f6f9b997b0cb698f4013a`.
+- OpenOutposts evidence: project-specific authentication and encryption identity corrections, commit `ab49967a8a6e1612061fdbe5f4cecaa527cea5ae`.
+- Found no new clearly intentional Hankyone projects missing from `projects.json`.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Ignored non-default-ref pushes, upstream merges, tests-only follow-up commits, repository housekeeping, and Project Radar edits.
+
 ## 2026-08-04
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-01` → `2026-08-03`).
