@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-08-06
+
+- Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-01` → `2026-08-05`).
+- Control+s evidence: added on-demand evidence-image inspection for Flue agents, commit `45c0491a5ee04e300ffc9d7363ece99c56001bda`.
+- Found no new clearly intentional Hankyone projects missing from `projects.json`.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Left OpenOutposts at `2026-08-04`; its August 6 commits only published snapshots, adjusted secret-scanner/package configuration, and shortened README copy.
+- Ignored upstream-only Ghostty and Maccy activity, generated files, dependency-only changes, repository housekeeping, and Project Radar edits.
+
 ## 2026-08-05
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-03` → `2026-08-04`) and OpenOutposts (`2026-08-01` → `2026-08-04`).
