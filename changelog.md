@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-08-07
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-04` → `2026-08-06`) and Ghostty Pro Plus Ultra (`2026-08-01` → `2026-08-07`).
+- Corrected VisionDJ from `2026-06-11` to `2026-06-12` after verifying substantial June 12 work in its exact repository.
+- deadsimpleRSS evidence: feed-fetch pipeline improvements, HTTPS migration handling, and feedback RSS, commit `27d82a33b6785f9f6d50ae90bc8f5fe1d9edec31`.
+- Ghostty evidence: fork-specific keeper cleanup and surface-release fixes, commit `0e5bbf5670fcb7087e642334fb79ecd4ad248246`; sidebar compatibility follow-up `bb50145174ad1254277a0ce93c3b0a64aa3fd3d8`.
+- VisionDJ evidence: conversation feed, host whisper endpoint, audible-change enforcement, and cadence changes, commit `2c3efea840cd13212de472f0de276cfaf7d320f6`.
+- Found no new clearly intentional Hankyone projects missing from `projects.json`; excluded `ai-marketplace-monitor` because its README and history identify it as an upstream-style BoPeng project copy.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Ignored upstream Ghostty merges and commits, OpenOutposts snapshot/release housekeeping, SEO/legal maintenance, generated files, dependency-only changes, and Project Radar edits.
+
 ## 2026-08-06
 
 - Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-01` → `2026-08-05`).
