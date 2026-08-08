@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-08
+
+- Synced `last_touched` from newer meaningful GitHub activity: RX1 Stack (`2026-07-05` → `2026-08-07`).
+- RX1 Stack mapping verified to `Hankyone/RX1-Robot` from its README and prior tracker history; evidence: servo torque-state verification, motion-stop behavior, right-hand bus corrections, and console status/event work, commit `f026c66c458e60e7162df949cd678a683546a151`.
+- Found no new clearly intentional Hankyone projects missing from `projects.json`.
+- Left existing project summaries, statuses, tags, and links unchanged.
+- Ignored upstream Ghostty activity, Obsyone vault-sync activity, OpenOutposts release/snapshot housekeeping, dependency-only changes, generated files, and Project Radar edits.
+
 ## 2026-08-07
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-04` → `2026-08-06`) and Ghostty Pro Plus Ultra (`2026-08-01` → `2026-08-07`).
