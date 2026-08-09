@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-08-09
+
+- Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-05` → `2026-08-08`), deadsimpleRSS (`2026-08-06` → `2026-08-08`), RapidRecap (`2026-07-31` → `2026-08-08`), Ghostty Pro Plus Ultra (`2026-08-07` → `2026-08-08`), and Anouar.ca (`2026-07-20` → `2026-08-08`).
+- Control+s evidence: legacy reports now infer and expose their framework scope, commit `c8b7640491dbfe349de590fdc5576438049762bb`.
+- deadsimpleRSS evidence: mapped a frozen DataBreaches FeedBurner subscription to its live WordPress feed with tests, commit `66047e7ee1fd5b02081027dc5b543ea094e4e700`.
+- RapidRecap evidence: fixed Worker-first routing so API and video routes no longer fall through SPA asset handling, commit `989952b669f1982f25021dbb35426702c7e5b9fb`; excluded the preceding search-indexing commit as SEO work.
+- Ghostty evidence: restored the local macOS SDK shim required for fork release builds under Xcode 27, commit `ff47ed417740cc76cd514c4628a41d94261ea5bd`; ignored later upstream commits and merges.
+- Anouar.ca evidence: intentionally removed ExTweets from the site project list and replaced/tuned the CanaryGrid project mark, commit `30edefc735a427c44f2e2c514765a8dd9dd87896`.
+- Found no new clearly intentional standalone Hankyone project to add. Left `ShadeSec-dot-com2` untracked because multiple ShadeSec website repositories make the canonical project mapping ambiguous.
+- Left existing project summaries, statuses, tags, and links unchanged. Ignored Project Radar edits, Obsyone vault syncs, OpenOutposts snapshots/release housekeeping, upstream-only work, SEO-only work, generated files, and dependency-only changes.
+
 ## 2026-08-08
 
 - Synced `last_touched` from newer meaningful GitHub activity: RX1 Stack (`2026-07-05` → `2026-08-07`).
@@ -178,25 +189,25 @@
 
 ## 2026-07-12
 
-- Synced `last_touched` from newer meaningful GitHub activity: Control+s.
+- Synced `last_touched` dates from newer meaningful GitHub activity: Control+s.
 - Left project summaries, statuses, tags, and links unchanged.
 - Ignored Project Radar repository edits as evidence for other project activity.
 
 ## 2026-07-11
 
-- Synced `last_touched` from newer meaningful GitHub activity: Control+s and Ghostty Pro Plus Ultra.
+- Synced `last_touched` dates from newer meaningful GitHub activity: Control+s and Ghostty Pro Plus Ultra.
 - Left project summaries, statuses, tags, and links unchanged.
 - Ignored Project Radar repository edits as evidence for other project activity.
 
 ## 2026-07-10
 
-- Synced `last_touched` from newer meaningful GitHub activity: Control+s, deadsimpleRSS, and Ghostty Pro Plus Ultra.
+- Synced `last_touched` dates from newer meaningful GitHub activity: Control+s, deadsimpleRSS, and Ghostty Pro Plus Ultra.
 - Left project summaries, statuses, tags, and links unchanged.
 - Ignored Project Radar repository edits as evidence for other project activity.
 
 ## 2026-07-09
 
-- Synced `last_touched` from newer meaningful GitHub activity: Control+s.
+- Synced `last_touched` dates from newer meaningful GitHub activity: Control+s.
 - Left project summaries, statuses, tags, and links unchanged.
 - Ignored Project Radar repository edits as evidence for other project activity.
 
