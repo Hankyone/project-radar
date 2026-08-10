@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-10
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-08` → `2026-08-09`) and Anouar.ca (`2026-08-08` → `2026-08-09`).
+- deadsimpleRSS evidence: reworked auth session authority and reconnect behavior so valid sessions survive transient Convex failures and tab restores, commit `8222caf259068f06bae50949ea874dd6fde026f0`.
+- Anouar.ca evidence: added CanaryGrid’s public landing-page link and project metadata to the personal site, commit `d71ae5e5cfb87102e7f50e1db151eca30aa060cc`; the later copy-only commit `94ba63248db0b255c0a6965c202a3d736ea5382c` did not independently drive the date.
+- Found no new clearly intentional standalone Hankyone project to add. `OpenOutposts-private` is related to an already tracked project rather than a separate project, and `ShadeSec-dot-com2` remains ambiguous because multiple ShadeSec website repositories exist.
+- Left existing project summaries, statuses, tags, and links unchanged. Ignored Project Radar edits, upstream Ghostty commits and merges, OpenOutposts snapshot/release housekeeping, Obsyone vault syncs, automated `background-agents` activity, generated files, dependency-only changes, and peripheral copy-only changes.
+
 ## 2026-08-09
 
 - Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-05` → `2026-08-08`), deadsimpleRSS (`2026-08-06` → `2026-08-08`), RapidRecap (`2026-07-31` → `2026-08-08`), Ghostty Pro Plus Ultra (`2026-08-07` → `2026-08-08`), and Anouar.ca (`2026-07-20` → `2026-08-08`).
