@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-08-11
+
+- Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-08` → `2026-08-10`), Canary Grid (`2026-07-05` → `2026-08-10`), deadsimpleRSS (`2026-08-09` → `2026-08-10`), RapidRecap (`2026-08-08` → `2026-08-10`), and ListenToMe (`2026-08-02` → `2026-08-11`).
+- Control+s evidence: editable report names, clearer ISO report choices, safer one-use report downloads, and filename handling, commit `78ddf2d18caa39c639b52c1629af55d2b08a18fc`.
+- Canary Grid evidence: production HTTP/AWS/DNS/OpenRouter canary workflows plus secret-safe agent operations and receiver hardening, commit `73a4574534a1da7b8069ec7a058ed7535c7a9ba0`.
+- deadsimpleRSS evidence: browser-offline detection now drives the disconnected badge even when the Convex WebSocket still appears connected, commit `78967c0258dc61a20ae4de13b666dce1cdff1e03`.
+- RapidRecap evidence: paste/search results can start a recap directly and upload age is labeled clearly, commit `70253730a07a13b89093815fef017d74b22de84e`.
+- ListenToMe evidence: validated regional language hints, bounded window sizing, and shorter user-facing API errors, commit `77e60b4d74f3597435bf94ff234f1d82c238381f`.
+- Found no new clearly intentional standalone Hankyone project to add. Excluded the synchronized late-August-10 Cursor commit wave across stale repositories as background-agent activity, including candidates in Disconnected Browser, TooManyProjects, Quorum, ShadeSec CIP, RapidScope, PRHub, Wi-Fi Boost, and the sensor project.
+- Left existing project summaries, statuses, tags, and links unchanged. Ignored dependency-only changes, repository housekeeping, generated files, upstream Ghostty work, Project Radar edits, OpenOutposts snapshots, and peripheral analytics/metadata changes.
+
 ## 2026-08-10
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-08` → `2026-08-09`) and Anouar.ca (`2026-08-08` → `2026-08-09`).
