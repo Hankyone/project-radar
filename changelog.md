@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-08-19
+
+- Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-10` → `2026-08-19`), Canary Grid (`2026-08-10` → `2026-08-19`), deadsimpleRSS (`2026-08-10` → `2026-08-14`), RapidRecap (`2026-08-10` → `2026-08-17`), and ListenToMe (`2026-08-11` → `2026-08-13`).
+- Control+s evidence: substantial report-generation, billing-flow, evidence-handling, and PDF work on August 19; latest meaningful commit `cffbc8ed0ac86ce7ccd8d85fcd1e3f1423e6e94f`.
+- Canary Grid evidence: OrcaRouter planting/dispatch campaigns, model coverage, backend campaign operations, and monitoring/UI work through August 19; latest meaningful commit `9b1e7eecd6721045de9b3cf1363f456182a246cc`.
+- deadsimpleRSS evidence: mobile sidebar gesture fixes, unread-count behavior, Reddit feed handling, and stale-update protection through August 14; latest meaningful commit `4b711101f1ab4e794e112e75c5f7c4e894366062`.
+- RapidRecap evidence: mobile search and direct pasted-URL recap flow fixes through August 17; latest meaningful commit `8c8b5c4d0b1f814ee6a86dfcdda7b4ce3bde533e`.
+- ListenToMe evidence: transcription-take reliability, latency tracing, overlay behavior, and update UI work through August 13; latest meaningful project commit `393506f41bc8566e2419512d00e0c2d257eb9efb`.
+- Found no new clearly intentional standalone Hankyone project to add. `ShadeSec-dot-com2` remains ambiguous because multiple ShadeSec website repositories exist and no canonical mapping is established.
+- Left existing project summaries, statuses, tags, and links unchanged. Ignored Project Radar edits, generated/dependency-only changes, repository housekeeping, upstream-only work, SEO/legal maintenance, and automated background-agent activity.
+
 ## 2026-08-11
 
 - Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-08` → `2026-08-10`), Canary Grid (`2026-07-05` → `2026-08-10`), deadsimpleRSS (`2026-08-09` → `2026-08-10`), RapidRecap (`2026-08-08` → `2026-08-10`), and ListenToMe (`2026-08-02` → `2026-08-11`).
@@ -269,7 +280,7 @@
 ## 2026-07-02
 
 - Synced `last_touched` dates from GitHub activity: Project Radar, Control+s, Canary Grid, deadsimpleRSS, and OptimalEats.
-- Left project summaries, statuses, tags, and links unchanged.
+- Left existing project summaries, statuses, tags, and links unchanged.
 
 ## 2026-07-01
 
