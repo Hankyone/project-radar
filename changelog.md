@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-20
+
+- Added Daily Budget after confirming `Hankyone/DailyBudgetApp` and its local-first MVP for turning income and recurring costs into a daily spendable amount; latest meaningful commit `6c22c6d0a81ae97f3583fa2062f4b4a4ede613d2` on `2026-08-19`.
+- Found no newer meaningful activity for existing tracked projects beyond their current `last_touched` dates.
+- Left `builder-comp` untracked as an ambiguous candidate: it currently contains a single AI Build League partner-brief commit `6111381f988bcfe7f8862583b26b8a5c1f8e3b54` without enough evidence of an ongoing project.
+- Excluded `bb-custom` and `bb-customizations` as fork/customization support repositories, plus snapshot, upstream, SEO/crawl metadata, vault-sync, and automated background-agent activity.
+- Left existing project summaries, statuses, tags, and links unchanged.
+
 ## 2026-08-19
 
 - Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-10` → `2026-08-19`), Canary Grid (`2026-08-10` → `2026-08-19`), deadsimpleRSS (`2026-08-10` → `2026-08-14`), RapidRecap (`2026-08-10` → `2026-08-17`), and ListenToMe (`2026-08-11` → `2026-08-13`).
