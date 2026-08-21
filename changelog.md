@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-21
+
+- Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-19` → `2026-08-20`), deadsimpleRSS (`2026-08-14` → `2026-08-20`), and Daily Budget (`2026-08-19` → `2026-08-20`).
+- Control+s evidence: fixed inspector drawer height collapse and full-height stacked-surface behavior, commit `bb7c52dc7d183587a3f928bd728c98c198cb1bb5`.
+- deadsimpleRSS evidence: OPML imports now retain public feed URLs across initial fetch failures, with Reddit rate-slot and 5xx recovery handling, commit `28e57cf202975ef7cc6ebebdda34dd5a505616bf`.
+- Daily Budget evidence: completed release-one behavior with entry pause/dates, breakdown modes, settings, local backup, and onboarding starters, commit `9b1a7f3453e09be8c7ef30509b0868955c0357a5`.
+- Added Build League from `Hankyone/builder-comp` after substantive live match/token-board and Cloudflare deployment work, commit `9d1d36987ad9bfc399b5d2b33a3bf9e118eb01ea`.
+- Added Monologue MCP Proxy from `Hankyone/monologue-mcp-proxy` after confirming a working Cloudflare MCP/OAuth proxy, commit `6f908686c6cec658127fa46ab4297c5da7f87dcb`.
+- Left existing project summaries, statuses, tags, and links unchanged. Ignored OpenOutposts snapshots and activity from `OpenOutposts-private`, Obsyone vault syncs, upstream/fork work, generated/dependency-only changes, and automated background-agent activity.
+
 ## 2026-08-20
 
 - Added Daily Budget after confirming `Hankyone/DailyBudgetApp` and its local-first MVP for turning income and recurring costs into a daily spendable amount; latest meaningful commit `6c22c6d0a81ae97f3583fa2062f4b4a4ede613d2` on `2026-08-19`.
