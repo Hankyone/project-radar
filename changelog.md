@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-22
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-20` → `2026-08-22`).
+- deadsimpleRSS evidence: rewrote Nitter media-proxy URLs to direct Twitter image/video CDN URLs throughout feed parsing and article rendering, with regression tests, commit `c451f4c1885a9cdd95741aa3699312d05094ff85`.
+- Found no new clearly intentional standalone Hankyone project to add. Left existing project summaries, statuses, tags, and links unchanged. Ignored Project Radar edits, known automated-agent commits, upstream/fork work, generated/dependency-only changes, repository housekeeping, and previously rejected ambiguous candidates.
+
 ## 2026-08-21
 
 - Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-19` → `2026-08-20`), deadsimpleRSS (`2026-08-14` → `2026-08-20`), and Daily Budget (`2026-08-19` → `2026-08-20`).
