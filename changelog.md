@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-24
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-22` → `2026-08-23`).
+- deadsimpleRSS evidence: recovered mobile sidebar swipes after interrupted or swallowed touch-end events by clearing stale touch sessions, commit `b21e1733a816f2b57e2656ad45d3e12efe978eaf`.
+- Found no new clearly intentional standalone Hankyone project to add. Left existing project summaries, statuses, tags, and links unchanged. Ignored Project Radar edits, known automated-agent commits, upstream/fork work, generated/dependency-only changes, repository housekeeping, and previously rejected ambiguous candidates.
+
 ## 2026-08-22
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-20` → `2026-08-22`).
