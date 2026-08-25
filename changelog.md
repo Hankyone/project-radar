@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-25
+
+- Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-20` → `2026-08-24`), Canary Grid (`2026-08-19` → `2026-08-24`), and RapidRecap (`2026-08-17` → `2026-08-24`).
+- Control+s evidence: demo replay completion now waits for expected assessment writes instead of trusting a recorded terminal timer, commit `3c8b251b49670bba27687eb4a7d72ef3cb8f0e44`.
+- Canary Grid evidence: added AnyRouter planting, router touch attribution, stronger token redaction, and a safe operator CLI, commit `df05d0c21354c90d0a2c97240d4bf95d18aee95e`.
+- RapidRecap evidence: ordinary search selection now opens the video without spending a recap credit; only the explicit Zap starts generation, commit `7073b1c697853754041d87d06694c83ec57c9fa3`. Ignored later commit `eceb948d9034209c35bb11ccb5e69737125c5622` as agent-skill and launch/promo workspace material rather than core product work.
+- Found no new clearly intentional standalone Hankyone project to add, and no Hankyone repository was created on or after `2026-08-21`. Left existing project summaries, statuses, tags, and links unchanged. Ignored Project Radar edits, OpenOutposts snapshots, upstream/fork work, generated/dependency-only changes, repository housekeeping, and previously rejected ambiguous candidates.
+
 ## 2026-08-24
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-22` → `2026-08-23`).
