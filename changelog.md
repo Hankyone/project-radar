@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-26
+
+- Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-24` → `2026-08-25`).
+- Control+s evidence: active external email-access invites can now be edited in place, including expiry and feedback/download permissions, with audit logging and tests, commit `422f95219c1f50d563d7f8a82473852d7faa9b95`.
+- Found no new clearly intentional standalone Hankyone project to add. Left `resume-visualizer-cloud` untracked because its August 25 commit `46f837404a85c32b9412b2a81deea907c9b63b38` is workspace cleanup and dependency churn rather than meaningful project development; `ShadeSec-dot-com2` remains ambiguous.
+- Left existing project summaries, statuses, tags, and links unchanged. Ignored the synchronized public Markdown, agent-guide, and 404 campaign across Control+s, deadsimpleRSS, RapidRecap, Anouar.ca, and ShadeSec-dot-com2, plus Obsyone vault syncs and Project Radar edits.
+
 ## 2026-08-25
 
 - Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-20` → `2026-08-24`), Canary Grid (`2026-08-19` → `2026-08-24`), and RapidRecap (`2026-08-17` → `2026-08-24`).
