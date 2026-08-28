@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-28
+
+- Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-25` → `2026-08-27`), deadsimpleRSS (`2026-08-23` → `2026-08-28`), MacDown Pro Plus Ultra (`2026-05-17` → `2026-08-27`), and ListenToMe (`2026-08-13` → `2026-08-27`).
+- Control+s evidence: updated Flue model specifications and added a runner activity heartbeat, commit `6ecf1471bea6baeb263a0d507560a80c501436f5`.
+- deadsimpleRSS evidence: refined the Custom Magic composer and matching/action controls, commit `7984d899d76e6b78d33227c8ba437971ba435ce7`.
+- MacDown Pro Plus Ultra evidence: polished the animated document-view selector and its accessibility behavior, commit `01cea59fd45d1b4c2171c4ea86cc309be24727a2`.
+- ListenToMe evidence: added system microphone input-volume control in Setup, commit `fa1d7e072d01e0035297951182f928be20712094`.
+- Found no new clearly intentional standalone Hankyone project to add. `resume-visualizer-cloud` remains excluded as cleanup/dependency churn, `ShadeSec-dot-com2` remains ambiguous, and `bb-custom` remains a customization/fork repository.
+- Left RapidRecap and Anouar.ca unchanged because their newer commits were public-agent/content representation work. Ignored Obsyone vault syncs, Project Radar edits, generated files, release publishing/signing-only commits, test-only changes, and other repository housekeeping.
+
 ## 2026-08-27
 
 - Added Kickbacks Harness after confirming `Hankyone/kickbacks-harness` as a standalone simulator project. Purpose evidence: commit `bd972d4b60069e5315aa14bc44078da3ff201758` runs the real Kickbacks VS Code extension against mocked VS Code and simulated coding activity; latest meaningful project commit `54490d37f6b41af7271b934b8d8d376a2cf2dfbe` on `2026-08-18` tunes the harness traffic model.
