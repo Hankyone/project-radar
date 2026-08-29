@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-29
+
+- Synced `last_touched` from newer meaningful GitHub activity: Ghostty Pro Plus Ultra (`2026-08-08` → `2026-08-28`) and ListenToMe (`2026-08-27` → `2026-08-28`).
+- Ghostty Pro Plus Ultra evidence: removed fork-specific glass tint overlay calls made obsolete by the upstream glass rewrite after the upstream merge, commit `cab5876c96ec1a4981167a7e7ab419a81818480f`; the upstream merge itself was ignored.
+- ListenToMe evidence: kept microphone capture open for 400 ms after key-up to preserve trailing words, with recording-flow and regression-test changes, commit `0e7d6dab954684ca7cbfda69f57c3c27a989c870`.
+- Added SidePiece from `Hankyone/SidePiece` as a prototype Android-agent controller after verifying its project spec and substantive implementation commit `1f332b26b8966a95fa67d40826d02f5348181cf8` on `2025-12-17`.
+- Left `Banff2025` and `Nothing` untracked as ambiguous one-off/novelty candidates. Ignored upstream merges, release/package-only work, vault syncs, generated/dependency-only changes, repository housekeeping, automated background-agent activity, and Project Radar edits.
+
 ## 2026-08-28
 
 - Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-25` → `2026-08-27`), deadsimpleRSS (`2026-08-23` → `2026-08-28`), MacDown Pro Plus Ultra (`2026-05-17` → `2026-08-27`), and ListenToMe (`2026-08-13` → `2026-08-27`).
