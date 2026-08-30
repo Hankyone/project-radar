@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-30
+
+- Added `portfolyahoo` from `Hankyone/portfolyahoo` as a prototype, last touched `2026-07-03`; evidence: Hankyone-authored parser fix `000b5220333fd11a78a8e08e0bc5c3679991f587`.
+- Added How To Vibe Secure from `Hankyone/HowToVibeSecure` as a prototype, last touched `2025-08-14`; evidence: Hankyone-authored SSRF demo and explanation work `0ed047d73d60a82a675631add15fb8a4ce59a7ea`. Excluded later Claude-authored work as automated activity.
+- Added CdQ-Calc from `Hankyone/CdQ-Calc` as a prototype, last touched `2025-11-05`; evidence: Hankyone-authored configuration persistence and import handling work `a70c51488d314c90c1de96c93ce1807ef8c9b723`.
+- Added Builder Sundayier from `Hankyone/BuldierSundayier` as a prototype, last touched `2026-03-01`; evidence: Hankyone-authored calendar and reminder-email UX work `2d8e733813375dcb51c2a77e3677beab6c0d47be`.
+- Added LeanLabs from `Hankyone/LeanLabs-App` as a prototype, last touched `2025-09-22`; evidence: Hankyone-authored home-screen and onboarding work `36253a6680485b96a50754997d4e6fbac5dcbee9`. Excluded the synchronized August 2026 Cursor refresh as background-agent activity.
+- Added `deadsimpleproxy` from `Hankyone/deadsimpleproxy` as a prototype, last touched `2026-02-13`; evidence: Hankyone-authored redirect-response handling fix `3f93d92b7dca66f787d1d715afc16f9495531ac9`.
+- No existing tracked `last_touched` dates changed. Left external/custom, component, setup-only, and ambiguous candidates untracked, including `tab-out-plus-pro-ultra`, `FrugalRSS`, `MindSnack-Sharer`, `ShadeSec-reporting-toolkit`, and ambiguous Sudoku repository identity.
+
 ## 2026-08-29
 
 - Synced `last_touched` from newer meaningful GitHub activity: Ghostty Pro Plus Ultra (`2026-08-08` → `2026-08-28`) and ListenToMe (`2026-08-27` → `2026-08-28`).
@@ -341,7 +351,7 @@
 ## 2026-07-03
 
 - Synced `last_touched` dates from newer meaningful GitHub activity: Project Radar, Control+s, RX1 Stack, RapidRecap, Too Many Projects Chrome Extension, Ghostty Pro Plus Ultra, ExTweets, Fusion Compliance Engine, Mech-Interp-Lab, and Maccy Pro Plus Ultra.
-- Left project summaries, statuses, tags, and links unchanged.
+- Left existing project summaries, statuses, tags, and links unchanged.
 - Corrected Project Radar domain references to `projects.anouar.ca`.
 - Renamed NearTalk to Hearabouts and updated its `last_touched` date to reflect recent development.
 - Rolled back OptimalEats `last_touched` to `2026-06-01`; the July GitHub activity was not meaningful project work.
