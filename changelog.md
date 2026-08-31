@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-31
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-28` → `2026-08-30`), PDF Corpus Redaction (`2026-07-21` → `2026-08-30`), and ListenToMe (`2026-08-28` → `2026-08-30`).
+- deadsimpleRSS evidence: unified feed-proxy outcome handling and terminal/recoverable feed-error classification, commit `b3d862c5d7b2f26a115d3a6729b97bb2146f9bd8`. Ignored later AGENTS-only production-approval guidance commit `1f166cc769bb68304879ae9b234345e5340a2751` as repository housekeeping.
+- PDF Corpus Redaction evidence: fixed decision-register row collisions and responsive action layout in the review UI, commit `da59d5f576a816e5ee62b95c9f31c6a4cb1c7ff5`.
+- ListenToMe evidence: added focused-field-aware dictation formatting, local field classification, and remembered per-field formatting overrides, commit `7277d67adba6d25b951caf4abb2b62fcb0e7aa8f`.
+- No new qualifying project added. Left recent ambiguous or non-project candidates untracked, including `ShadeSec-dot-com2` and `resume-visualizer-cloud`; ignored upstream/background-agent work, generated files, and repository housekeeping.
+
 ## 2026-08-30
 
 - Added `portfolyahoo` from `Hankyone/portfolyahoo` as a prototype, last touched `2026-07-03`; evidence: Hankyone-authored parser fix `000b5220333fd11a78a8e08e0bc5c3679991f587`.
