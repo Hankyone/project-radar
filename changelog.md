@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-01
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-30` → `2026-09-01`) and ListenToMe (`2026-08-30` → `2026-08-31`).
+- deadsimpleRSS evidence: improved mobile podcast controls and responsive control layout, commit `55933ac64edcaa7d41dff306ac237616fca17269`.
+- ListenToMe evidence: changed mic startup so capture waits only when media was actually playing and confirms playback is paused, commit `5e3b21465f9723e3278ac122864f225f87245fe0`.
+- No new qualifying project added. Ignored Project Radar edits, SEO-only/peripheral work, repository housekeeping, and automated background-agent activity.
+
 ## 2026-08-31
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-28` → `2026-08-30`), PDF Corpus Redaction (`2026-07-21` → `2026-08-30`), and ListenToMe (`2026-08-28` → `2026-08-30`).
