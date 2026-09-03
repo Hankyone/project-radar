@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-03
+
+- Synced `last_touched` from newer meaningful GitHub activity: ListenToMe (`2026-09-01` → `2026-09-03`).
+- ListenToMe evidence: fixed media pause/resume control by consulting Now Playing playback rate before toggling and safely adopting stale pause sessions, commit `8e746ab14a58f1f29afd3044474757a02aa1afc5`.
+- No new qualifying project added. Ignored Project Radar sync edits, same-date deadsimpleRSS work already covered by `2026-09-02`, upstream/background-agent activity, repository housekeeping, generated/dependency-only changes, and previously rejected ambiguous candidates.
+
 ## 2026-09-02
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-01` → `2026-09-02`) and ListenToMe (`2026-08-31` → `2026-09-01`).
