@@ -43,6 +43,7 @@
 - Added LeanLabs from `Hankyone/LeanLabs-App` as a prototype, last touched `2025-09-22`; evidence: Hankyone-authored home-screen and onboarding work `36253a6680485b96a50754997d4e6fbac5dcbee9`. Excluded the synchronized August 2026 Cursor refresh as background-agent activity.
 - Added `deadsimpleproxy` from `Hankyone/deadsimpleproxy` as a prototype, last touched `2026-02-13`; evidence: Hankyone-authored redirect-response handling fix `3f93d92b7dca66f787d1d715afc16f9495531ac9`.
 - No existing tracked `last_touched` dates changed. Left external/custom, component, setup-only, and ambiguous candidates untracked, including `tab-out-plus-pro-ultra`, `FrugalRSS`, `MindSnack-Sharer`, `ShadeSec-reporting-toolkit`, and ambiguous Sudoku repository identity.
+
 ## 2026-08-29
 
 - Synced `last_touched` from newer meaningful GitHub activity: Ghostty Pro Plus Ultra (`2026-08-08` → `2026-08-28`) and ListenToMe (`2026-08-27` → `2026-08-28`).
@@ -83,6 +84,7 @@
 - Found no new clearly intentional standalone Hankyone project to add, and no Hankyone repository was created on or after `2026-08-21`. Left existing project summaries, statuses, tags, and links unchanged. Ignored Project Radar edits, OpenOutposts snapshots, upstream/fork work, generated/dependency-only changes, repository housekeeping, and previously rejected ambiguous candidates.
 
 ## 2026-08-24
+
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-22` → `2026-08-23`).
 - deadsimpleRSS evidence: recovered mobile sidebar swipes after interrupted or swallowed touch-end events by clearing stale touch sessions, commit `b21e1733a816f2b57e2656ad45d3e12efe978eaf`.
 - Found no new clearly intentional standalone Hankyone project to add. Left existing project summaries, statuses, tags, and links unchanged. Ignored Project Radar edits, known automated-agent commits, upstream/fork work, generated/dependency-only changes, repository housekeeping, and previously rejected ambiguous candidates.
@@ -121,6 +123,7 @@
 - ListenToMe evidence: transcription-take reliability, latency tracing, overlay behavior, and update UI work through August 13; latest meaningful project commit `393506f41bc8566e2419512d00e0c2d257eb9efb`.
 - Found no new clearly intentional standalone Hankyone project to add. `ShadeSec-dot-com2` remains ambiguous because multiple ShadeSec website repositories exist and no canonical mapping is established.
 - Left existing project summaries, statuses, tags, and links unchanged. Ignored Project Radar edits, generated/dependency-only changes, repository housekeeping, upstream-only work, SEO/legal maintenance, and automated background-agent activity.
+
 ## 2026-08-11
 
 - Synced `last_touched` from newer meaningful GitHub activity: Control+s (`2026-08-08` → `2026-08-10`), Canary Grid (`2026-07-05` → `2026-08-10`), deadsimpleRSS (`2026-08-09` → `2026-08-10`), RapidRecap (`2026-08-08` → `2026-08-10`), and ListenToMe (`2026-08-02` → `2026-08-11`).
@@ -160,6 +163,7 @@
 - Ignored upstream Ghostty activity, Obsyone vault-sync activity, OpenOutposts release/snapshot housekeeping, dependency-only changes, generated files, and Project Radar edits.
 
 ## 2026-08-07
+
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-08-04` → `2026-08-06`) and Ghostty Pro Plus Ultra (`2026-08-01` → `2026-08-07`).
 - Corrected VisionDJ from `2026-06-11` to `2026-06-12` after verifying substantial June 12 work in its exact repository.
 - deadsimpleRSS evidence: feed-fetch pipeline improvements, HTTPS migration handling, and feedback RSS, commit `27d82a33b6785f9f6d50ae90bc8f5fe1d9edec31`.
@@ -239,6 +243,7 @@
 - Ignored upstream-only Ghostty activity, repository housekeeping, generated files, and Project Radar edits.
 
 ## 2026-07-28
+
 - Synced `last_touched` from newer meaningful GitHub activity: OpenOutposts.
 - Found no new clearly intentional Hankyone projects missing from `projects.json`.
 - Left existing project summaries, statuses, tags, and links unchanged.
