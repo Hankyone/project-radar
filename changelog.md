@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-05
+
+- Added PPSA Agent from `Hankyone/PPSA_Agent` as a prototype, last touched `2026-07-01`; evidence: Hankyone-authored initial implementation `2957f93b6fc8adecebe72578214a29353f5a061e`, with PDF ingestion/search and a multi-document LLM workflow.
+- No existing tracked `last_touched` dates changed.
+- Left `poem` untracked as an ambiguous one-off wedding-practice artifact; FrancePlan remains excluded per the prior user-requested removal. Excluded `CorpTaxes2025` as a tax-ops workspace, `ai-marketplace-monitor` as a fork, the alternate `Rx1Stack` repository as related to the already tracked RX1 Stack, and September 4 `background-agents` upstream/merge activity.
+
 ## 2026-09-04
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-02` → `2026-09-03`).
