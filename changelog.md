@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-06
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-03` → `2026-09-06`).
+- deadsimpleRSS evidence: tweet-feed headings are now detected from X/Twitter/Nitter status URLs and clamped to two lines in grid and split reader views, commit `72c58ae4a9bc1a87dc1b027f6b9adf343287161f`.
+- No new qualifying project added. No Hankyone repository was created on or after `2026-09-05`; ignored `background-agents` upstream/merge activity and Project Radar edits.
+
 ## 2026-09-05
 
 - Added PPSA Agent from `Hankyone/PPSA_Agent` as a prototype, last touched `2026-07-01`; evidence: Hankyone-authored initial implementation `2957f93b6fc8adecebe72578214a29353f5a061e`, with PDF ingestion/search and a multi-document LLM workflow.
