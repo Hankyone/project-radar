@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-08
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-06` → `2026-09-07`).
+- deadsimpleRSS evidence: pending Reddit feed reuse now checks stored refresh state and rechecks proxy eligibility before reusing failed feed records, with regression coverage, commit `0034e70f4136371362be6604b182135f1e612310`.
+- No new qualifying project added. Left OpenOutposts unchanged: commit `ae69eba22455e64b01482e4709c0c3aa97d4595d` is another `chore: publish OpenOutposts snapshot` publication commit, matching the previously excluded snapshot pattern. Ignored Project Radar edits, upstream/background-agent activity, generated/dependency-only changes, and repository housekeeping.
+
 ## 2026-09-06
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-03` → `2026-09-06`).
