@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-12
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-07` → `2026-09-12`).
+- deadsimpleRSS evidence: unified feed and proxy failure reporting across the frontend, Convex backend, Python proxy, and deployment health checks, with regression coverage, commit `bd33a700432d7747eb70c2ff117362d77b51ec62`. Same work wave also included provider retry/error handling in `7f3a1d7b3b6c36c040e9b5f368116b28a921b07a` and animated feed-media fixes in `21630c272afc5ac1fab454808fb3e84076d3b939`.
+- No new qualifying project added. Ignored later release-verification/docs-only commit `66eac75fc9eee4cb5a2126f7a29ce581ae404aa8`, Project Radar edits, OpenOutposts snapshot publication, and other previously excluded maintenance/background activity.
+
 ## 2026-09-08
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-06` → `2026-09-07`).
