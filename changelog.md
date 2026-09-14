@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-14
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-12` → `2026-09-13`).
+- deadsimpleRSS evidence: allowed `magnet:`, `webcal:`, and `geo:` links in article content while keeping unsafe protocols and app embeds blocked, with browser regression coverage, commit `cc54f5228eadd6be349919c8fbade2a56f4200e0`.
+- No new qualifying project added. Left Kickbacks Harness unchanged: commits `e7ad945e9c19f7b2772e8525e9d76769691fb86e` and `e7ea468a13d29c052a523ceab1740d55d4512451` were generated with Devin and co-authored by the Devin bot, so they were treated as automated background-agent work. Ignored Project Radar sync edits and previously excluded maintenance/background activity.
+
 ## 2026-09-12
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-07` → `2026-09-12`).
