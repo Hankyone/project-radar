@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-15
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-13` → `2026-09-14`).
+- deadsimpleRSS evidence: authenticated public Reddit RSS fetches at the HTTP boundary without exposing credentials in cached/delivered feeds or errors, commit `d324ec0fc075a8008c56b2116a399ed6a33b7269`; the same September 14 work also preserved upstream Reddit 429s during refresh in `2ddc24dead1b47533984bebfbb75bcb59e0ddee0` and improved feed URL recovery/error reporting in `b6f5892572b25f7d989e77c4fe412a6366960ab5`.
+- No new qualifying project added. Left RapidRecap unchanged because `9febb307a99bb81b537c090c6e47c34b5bd4f5bd` is a peripheral footer-wordmark clipping fix. Left Maccy unchanged because substantive September 15 feature commits were explicitly Devin-generated, while the latest Hankyone-only changes were CI/release housekeeping. Ignored OpenOutposts snapshot/mirror activity and Project Radar edits.
+
 ## 2026-09-14
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-12` → `2026-09-13`).
@@ -237,7 +243,6 @@
 - Ignored Sentry/build plumbing, repository housekeeping, upstream-only activity, automated `background-agents` activity, and Project Radar edits.
 
 ## 2026-08-02
-
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-07-26` → `2026-08-01`).
 - Evidence: filter-suggestion prompt redesign and measured model-routing changes, latest meaningful commit `9951907331f51e9c49a5fb6846bf866179af03b4`.
 - Found no new clearly intentional Hankyone projects missing from `projects.json`.
