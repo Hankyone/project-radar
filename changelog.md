@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-17
+
+- Synced `last_touched` from newer meaningful GitHub activity: Ghostty Pro Plus Ultra (`2026-08-28` → `2026-09-16`).
+- Ghostty Pro Plus Ultra evidence: fixed split-pane click, drag, and release routing so mouse selection stays on the clicked terminal surface, with repeated-click and cross-divider regression coverage, commit `fb972a14c94192efdac4e817db9977fdb83bde46`.
+- No new qualifying project added. Left RapidRecap unchanged because `f54f5624c9c9081465cfb2a8a448e03197e61d12` is primarily search metadata, redirects, route configuration, and a small archive-footer link. Ignored Ghostty release packaging `084a50eb7f04c8d2795914a2f75c19cdc1863bbe`, upstream merges, automated Maccy work, OpenOutposts snapshots, and Project Radar edits.
+
 ## 2026-09-15
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-13` → `2026-09-14`).
@@ -102,7 +108,7 @@
 
 - Added Kickbacks Harness after confirming `Hankyone/kickbacks-harness` as a standalone simulator project. Purpose evidence: commit `bd972d4b60069e5315aa14bc44078da3ff201758` runs the real Kickbacks VS Code extension against mocked VS Code and simulated coding activity; latest meaningful project commit `54490d37f6b41af7271b934b8d8d376a2cf2dfbe` on `2026-08-18` tunes the harness traffic model.
 - Found no newer meaningful activity for existing tracked projects beyond their current `last_touched` dates.
-- Left existing project summaries, statuses, tags, and links unchanged. Ignored the public Markdown/agent-guide/404/edge-content work across Control+s, deadsimpleRSS, RapidRecap, and Anouar.ca, upstream Ghostty work, OpenOutposts snapshots and `OpenOutposts-private` activity, generated/dependency-only changes, vault syncs, repository housekeeping, and automated background-agent activity.
+- Left existing project summaries, statuses, tags, and links unchanged. Ignored the public Markdown/agent-guide/404/edge-content work across Control+s, deadsimpleRSS, RapidRecap, Anouar.ca, and ShadeSec-dot-com2, upstream Ghostty work, OpenOutposts snapshots and `OpenOutposts-private` activity, generated/dependency-only changes, vault syncs, repository housekeeping, and automated background-agent activity.
 
 ## 2026-08-26
 
