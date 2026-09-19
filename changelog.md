@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-19
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-14` → `2026-09-18`).
+- deadsimpleRSS evidence: aligned the Convex feed-proxy timeout with the proxy’s queue and fetch budgets, with regression coverage for slow successful responses, proxy timeouts, and the final client abort, commit `41db13027f0ed7471f2f367b0f53bdd190af0df8`.
+- Added GTAeats from `Hankyone/GTAeats` as a prototype, last touched `2026-09-19`; project context identifies it as a homemade-food marketplace fed by Facebook Marketplace listings, and latest meaningful commit `c900a60f4d7d8e4f1a697ff7681a1464daa9721b` accepts nullable ingest fields and refines approximate map placement from distance data.
+- Left Ghostty Pro Plus Ultra unchanged because post-September-16 activity was upstream merge, translation, and bot-maintenance work. Ignored Project Radar sync edits and other previously excluded maintenance/background activity.
+
 ## 2026-09-17
 
 - Synced `last_touched` from newer meaningful GitHub activity: Ghostty Pro Plus Ultra (`2026-08-28` → `2026-09-16`).
