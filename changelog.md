@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-20
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-18` → `2026-09-19`).
+- deadsimpleRSS evidence: shared versioned Magic assessments and hardened batched execution with stale-result protection and regression coverage, commit `9fdf611620be1dc483faae0256535e52f4724a6c`.
+- No new qualifying project added. Left Ghostty Pro Plus Ultra unchanged because its September 19 push was upstream merge `d1ed09f813a16421652853f3c871cc6ad751cb80`; ignored deadsimpleRSS changelog-only commit `b2373f3c968f839ccfdd18888c67710c7cd86fd1`, generated API types, and Project Radar edits.
+
 ## 2026-09-19
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-14` → `2026-09-18`).
