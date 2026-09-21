@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-21
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-19` → `2026-09-20`).
+- deadsimpleRSS evidence: recovered verified legacy Twitter feeds through managed Nitter mirrors while preserving saved feed identity, article IDs, and read/star history, with regression coverage, commit `76e0a0eb8537146cea593fe9f4837b9fa88ec567`.
+- No new qualifying project added.
+
 ## 2026-09-20
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-18` → `2026-09-19`).
