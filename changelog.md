@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-22
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-20` → `2026-09-21`).
+- deadsimpleRSS evidence: added PostHog source-map upload for deployed frontend chunks and made the update badge depend on a client-bundle content fingerprint so backend-only pushes no longer trigger reload prompts, commit `5291bff9162ed2f30a308b64637f363842f8a467`.
+- No new qualifying project added. Ignored Project Radar sync edits and Ghostty upstream merge activity.
+
 ## 2026-09-21
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-19` → `2026-09-20`).
