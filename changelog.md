@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-24
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-21` → `2026-09-23`).
+- deadsimpleRSS evidence: preserved embedded article images in Cloudflare R2 across feed ingestion and external-content paths with regression coverage, commit `8f966e2a49fa4e8a6c2fe1ba2e569a2d51af8113`; same-day follow-up `52e4cce2f46539e8242f3f61aaaba7e9834ddc40` exposed the media worker on `media.deadsimplerss.com`.
+- No new qualifying project added. Left Luma RSS unchanged because `8956d286720387b202de37e5be5d4aad06b27fc1` only adds one seed calendar to its watchlist; ignored Anouar.ca profile-photo replacement `e473a0388a30521ff9aed1b8f2def89997272bb5`, Devin-generated Kickbacks Harness work, Ghostty upstream activity, and Project Radar edits.
+
 ## 2026-09-22
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-20` → `2026-09-21`).
