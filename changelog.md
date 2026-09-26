@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-26
+
+- Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-23` → `2026-09-25`).
+- deadsimpleRSS evidence: made feed/category edits and starring update optimistically in the UI while bounding synchronous article rewrites and continuing the rest in scheduled work, with regression coverage, commit `f139db4f4855c5bfbb70a13398720c82e3a11110`. Same September 25 work also made feed removal optimistic in `1ddc384999519dfbe2ea35d7059a93810c80800b` and hardened Reddit/proxy failure handling in `7f777f249c356a250538ef41fd2732470e3638d8` and `af89a5dc1aba0b75df40abb61563a2b87e3a8c30`.
+- No new qualifying project added. Left Ghostty Pro Plus Ultra unchanged because its September 25 activity was upstream merge `61eb262546a894347ca1d48fef5aa976278a55ef`; ignored deadsimpleRSS test-only logger cleanup `5154eda4f2f3f0d3944b1be4a7a838d00c21101c` and Project Radar edits.
+
 ## 2026-09-24
 
 - Synced `last_touched` from newer meaningful GitHub activity: deadsimpleRSS (`2026-09-21` → `2026-09-23`).
